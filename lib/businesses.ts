@@ -407,13 +407,7 @@ export const BUSINESSES: Business[] = [
     description:
       "Mobile application for accessing Doutya Prep through WebView.",
   },
-  {
-    id: "knockster-mobile",
-    name: "Knockster",
-    category: "Mobile Apps",
-    description:
-      "Enterprise visitor, employee, and gate access management mobile application.",
-  },
+
   {
     id: "knockster-user",
     name: "Knockster User",
