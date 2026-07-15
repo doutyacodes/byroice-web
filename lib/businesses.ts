@@ -451,6 +451,13 @@ export const BUSINESSES: Business[] = [
       "Apartment and residential community management mobile application.",
   },
   {
+    id: "tenman-app",
+    name: "Tenman App",
+    category: "Mobile Apps",
+    description:
+      "Official mobile application for Tenman.",
+  },
+  {
     id: "engage-mobile",
     name: "Engage",
     category: "Mobile Apps",
