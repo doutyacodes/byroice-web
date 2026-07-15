@@ -600,13 +600,7 @@ export const BUSINESSES: Business[] = [
     description:
       "Restaurant application for managing orders, menus, and deliveries.",
   },
-  {
-    id: "caf-mobile",
-    name: "Citizen Attachment Framework (CAF)",
-    category: "Mobile Apps",
-    description:
-      "Citizen engagement and civic information mobile application.",
-  },
+
   {
     id: "ai-lawyer",
     name: "AI Lawyer",
