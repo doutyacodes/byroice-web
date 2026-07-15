@@ -493,7 +493,7 @@ export const BUSINESSES: Business[] = [
   },
   {
     id: "game-trade-mobile",
-    name: "Game Trade App",
+    name: "Game Trade Mobile App",
     category: "Mobile Apps",
     description:
       "Marketplace mobile application for buying, selling, and trading games.",
