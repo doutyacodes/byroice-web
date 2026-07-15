@@ -39,7 +39,7 @@ export const BUSINESSES: Business[] = [
   // ==================================================
   {
     id: "healway",
-    name: "Healway",
+    name: "Hospital Token",
     category: "Healthcare",
     description:
       "Complete hospital management platform for healthcare providers.",
@@ -53,7 +53,7 @@ export const BUSINESSES: Business[] = [
   },
   {
     id: "clinic",
-    name: "Clinic",
+    name: "Hospital Token Admin",
     category: "Healthcare",
     description:
       "Clinic appointment booking and patient management solution.",
