@@ -440,13 +440,7 @@ export const BUSINESSES: Business[] = [
     description:
       "AI-powered guided prayer and spiritual companion.",
   },
-  {
-    id: "game-trade-mobile",
-    name: "Game Trade Mobile App",
-    category: "Mobile Apps",
-    description:
-      "Marketplace mobile application for buying, selling, and trading games.",
-  },
+
   {
     id: "ping-tales-mobile",
     name: "Ping Tales",
