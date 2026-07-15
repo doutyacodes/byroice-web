@@ -458,13 +458,7 @@ export const BUSINESSES: Business[] = [
     description:
       "Customer engagement and communication mobile platform.",
   },
-  {
-    id: "xortcut-mobile",
-    name: "Xortcut",
-    category: "Mobile Apps",
-    description:
-      "Productivity and smart shortcuts mobile application.",
-  },
+
   {
     id: "xortcut-institute-admin",
     name: "Xortcut Institute Admin",
