@@ -78,4 +78,12 @@ export const CATEGORY_META: Record<BusinessCategory, CategoryMeta> = {
     hoverShadow: "hover:shadow-slate-400/10",
     blob: "bg-slate-400/20",
   },
+  "Mobile Apps": {
+    hex: "#F97316",
+    image: "/assets/business/mobile.webp",
+    badge: "bg-orange-400/10 text-orange-300 border-orange-400/20",
+    hoverBorder: "hover:border-orange-400/40",
+    hoverShadow: "hover:shadow-orange-400/10",
+    blob: "bg-orange-400/20",
+  },
 };
