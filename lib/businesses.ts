@@ -289,13 +289,7 @@ export const BUSINESSES: Business[] = [
   // Websites
   // ==================================================
 
-  {
-    id: "cds-web-page",
-    name: "CDS Web Page",
-    category: "Websites",
-    description:
-      "Official website for CDS.",
-  },
+
   {
     id: "tenman-web-page",
     name: "Tenman Web Page",
