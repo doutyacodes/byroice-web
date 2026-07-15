@@ -118,13 +118,7 @@ export const BUSINESSES: Business[] = [
     description:
       "Modern apartment and residential community management platform.",
   },
-  {
-    id: "safety-monitor",
-    name: "Safety Monitor",
-    category: "Community",
-    description:
-      "Real-time monitoring and security dashboard for organizations.",
-  },
+
 
   // ==================================================
   // Technology
