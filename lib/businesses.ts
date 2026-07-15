@@ -147,7 +147,7 @@ export const BUSINESSES: Business[] = [
   },
   {
     id: "persanalytics",
-    name: "PersAnalytics",
+    name: "PersAnalytics (For Individuals)",
     category: "Technology",
     description:
       "Advanced analytics platform delivering personalized business insights.",
@@ -161,7 +161,7 @@ export const BUSINESSES: Business[] = [
   },
   {
     id: "analytics",
-    name: "Analytics",
+    name: "Analytics (For Companies)",
     category: "Technology",
     description:
       "Business intelligence and real-time analytics platform.",

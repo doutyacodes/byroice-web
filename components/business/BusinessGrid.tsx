@@ -17,7 +17,7 @@ function getGroupName(name: string): string {
   if (name.includes("Knockster")) return "Knockster";
   if (name.includes("Mapogram")) return "Mapogram";
   if (name.includes("Homedel")) return "Homedel";
-  if (name.includes("PersAnalytics")) return "PersAnalytics";
+  if (name.includes("Analytics")) return "PersAnalytics";
   if (name.includes("Game Trade")) return "Game Trade";
   
   return name.split(" ")[0];
