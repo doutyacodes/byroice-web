@@ -261,13 +261,7 @@ export const BUSINESSES: Business[] = [
     description:
       "Location-based news discovery platform.",
   },
-  {
-    id: "caf",
-    name: "Citizen Attachment Framework (CAF)",
-    category: "Media",
-    description:
-      "Citizen engagement and civic information framework.",
-  },
+
 
   // ==================================================
   // Marketplace
