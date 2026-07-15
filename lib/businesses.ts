@@ -272,13 +272,7 @@ export const BUSINESSES: Business[] = [
     description:
       "Digital storytelling and publishing platform.",
   },
-  {
-    id: "bombay-chronicle",
-    name: "The Bombay Chronicle",
-    category: "Media",
-    description:
-      "Independent digital news publication.",
-  },
+
   {
     id: "news-prep",
     name: "News Prep",
@@ -320,41 +314,7 @@ export const BUSINESSES: Business[] = [
   // ==================================================
   // Websites
   // ==================================================
-  {
-    id: "roice-interactive-website",
-    name: "Roice Interactive Website",
-    category: "Websites",
-    description:
-      "Official website for Roice Interactive.",
-  },
-  {
-    id: "roice-strategies-website",
-    name: "Roice Strategies Website",
-    category: "Websites",
-    description:
-      "Official website for Roice Strategies.",
-  },
-  {
-    id: "kiranroice",
-    name: "KiranRoice.com",
-    category: "Websites",
-    description:
-      "Official website of Kiran Roice.",
-  },
-  {
-    id: "kiranroice-admin",
-    name: "KiranRoice Web Admin",
-    category: "Websites",
-    description:
-      "Administrative dashboard for KiranRoice.com.",
-  },
-  {
-    id: "roice-groups-website",
-    name: "Roice Groups Website",
-    category: "Websites",
-    description:
-      "Official corporate website for Roice Groups.",
-  },
+
   {
     id: "cds-web-page",
     name: "CDS Web Page",
@@ -508,13 +468,7 @@ export const BUSINESSES: Business[] = [
     description:
       "Digital certification verification mobile application.",
   },
-  {
-    id: "bombay-chronicle-mobile",
-    name: "The Bombay Chronicle",
-    category: "Mobile Apps",
-    description:
-      "Digital news reading application.",
-  },
+
   {
     id: "news-prep-mobile",
     name: "News Prep",

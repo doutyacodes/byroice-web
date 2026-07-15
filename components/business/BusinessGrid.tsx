@@ -9,8 +9,6 @@ function getGroupName(name: string): string {
   if (name.includes("Hospital Token")) return "Hospital Token";
   if (name.includes("Hommunity") || name.includes("Tenman")) return "Hommunity";
   if (name.includes("Woman Safety")) return "Woman Safety";
-  if (name.includes("KiranRoice")) return "KiranRoice";
-  if (name.includes("Roice")) return "Roice";
   if (name.includes("Wowfy")) return "Wowfy";
   if (name.includes("Doutya")) return "Doutya";
   if (name.includes("Axara")) return "Axara";
