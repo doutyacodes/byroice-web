@@ -4,14 +4,24 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowRightIcon } from "../services/icons";
 
+function round(value: number) {
+  return Math.round(value * 100) / 100;
+}
+
 const RING_1 = Array.from({ length: 6 }, (_, i) => {
   const angle = (i / 6) * Math.PI * 2;
-  return { x: 300 + Math.cos(angle) * 130, y: 300 + Math.sin(angle) * 130 };
+  return {
+    x: round(300 + Math.cos(angle) * 130),
+    y: round(300 + Math.sin(angle) * 130),
+  };
 });
 
 const RING_2 = Array.from({ length: 9 }, (_, i) => {
   const angle = (i / 9) * Math.PI * 2;
-  return { x: 300 + Math.cos(angle) * 220, y: 300 + Math.sin(angle) * 220 };
+  return {
+    x: round(300 + Math.cos(angle) * 220),
+    y: round(300 + Math.sin(angle) * 220),
+  };
 });
 
 function OrbitIllustration() {

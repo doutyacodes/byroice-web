@@ -209,7 +209,7 @@ export const BUSINESSES: Business[] = [
   },
   {
     id: "doutya-recruit",
-    name: "Doutya Recruit",
+    name: "Xortlist Recruit",
     category: "Business",
     description:
       "AI-powered recruitment and hiring management solution.",
