@@ -106,7 +106,7 @@ export const BUSINESSES: Business[] = [
   },
   {
     id: "gatewise",
-    name: "Gatewise",
+    name: "Hommunity Admin",
     category: "Community",
     description:
       "Smart gate entry and visitor management solution.",
