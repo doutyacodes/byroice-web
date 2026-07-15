@@ -6,12 +6,12 @@ import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 
 const NAV_LINKS = [
-  "Services",
-  "Industries",
-  "Businesses",
-  "Careers",
-  "Media",
-  "Company",
+  { label: "Services", href: "#services" },
+  { label: "Industries", href: "#industries" },
+  { label: "Businesses", href: "/business" },
+  { label: "Careers", href: "#careers" },
+  { label: "Media", href: "#media" },
+  { label: "Company", href: "#company" },
 ] as const;
 
 export default function Navbar() {
@@ -41,13 +41,13 @@ export default function Navbar() {
           className="hidden flex-1 items-center justify-center gap-8 lg:flex xl:gap-12"
         >
           {NAV_LINKS.map((link) => (
-            <a
-              key={link}
-              href={`#${link.toLowerCase()}`}
+            <Link
+              key={link.label}
+              href={link.href}
               className="text-[15px] font-medium text-white/90 transition-colors hover:text-white"
             >
-              {link}
-            </a>
+              {link.label}
+            </Link>
           ))}
         </nav>
 
@@ -87,14 +87,14 @@ export default function Navbar() {
           >
             <ul className="flex flex-col gap-1 px-6 pb-6 sm:px-10">
               {NAV_LINKS.map((link) => (
-                <li key={link}>
-                  <a
-                    href={`#${link.toLowerCase()}`}
+                <li key={link.label}>
+                  <Link
+                    href={link.href}
                     onClick={() => setIsMenuOpen(false)}
                     className="block py-3 text-base font-medium text-white/90 transition-colors hover:text-white"
                   >
-                    {link}
-                  </a>
+                    {link.label}
+                  </Link>
                 </li>
               ))}
             </ul>
