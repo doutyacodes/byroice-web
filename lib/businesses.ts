@@ -78,7 +78,7 @@ export const BUSINESSES: Business[] = [
   },
   {
     id: "knockster-safety",
-    name: "Knockster Safety",
+    name: "Woman Safety Admin Panel",
     category: "Community",
     description:
       "Safety and incident management platform for organizations.",
@@ -388,7 +388,7 @@ export const BUSINESSES: Business[] = [
   // ==================================================
   {
     id: "knockster-safety-flutter",
-    name: "Knockster Safety Flutter",
+    name: "Woman Safety Mobile App",
     category: "Mobile Apps",
     description:
       "Flutter mobile application for enterprise safety and emergency management.",
