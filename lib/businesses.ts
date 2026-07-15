@@ -327,14 +327,7 @@ export const BUSINESSES: Business[] = [
   // ==================================================
   // Corporate
   // ==================================================
-  {
-    id: "byroice",
-    name: "ByRoice",
-    category: "Corporate",
-    description:
-      "Parent company driving innovation across multiple ventures.",
-    featured: true,
-  },
+
 
   // ==================================================
   // Websites

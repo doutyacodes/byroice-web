@@ -36,4 +36,9 @@ export const CATEGORY_HIGHLIGHTS: Record<
     "Fast and reliable",
     "Built to convert",
   ],
+  "Mobile Apps": [
+    "Native performance",
+    "Intuitive interfaces",
+    "Built for the edge",
+  ],
 };
