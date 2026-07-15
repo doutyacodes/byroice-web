@@ -51,13 +51,7 @@ export const BUSINESSES: Business[] = [
     description:
       "Digital patient queue, appointment booking, and hospital visitor management platform.",
   },
-  {
-    id: "clinic",
-    name: "Hospital Token Admin",
-    category: "Healthcare",
-    description:
-      "Clinic appointment booking and patient management solution.",
-  },
+
 
   // ==================================================
   // Community
@@ -76,13 +70,7 @@ export const BUSINESSES: Business[] = [
     description:
       "Central super administrator portal for all Knockster deployments.",
   },
-  {
-    id: "knockster-safety",
-    name: "Woman Safety Admin Panel",
-    category: "Community",
-    description:
-      "Safety and incident management platform for organizations.",
-  },
+
   {
     id: "knockster-company",
     name: "Knockster Company",
@@ -104,13 +92,7 @@ export const BUSINESSES: Business[] = [
     description:
       "Official website for the Knockster ecosystem.",
   },
-  {
-    id: "gatewise",
-    name: "Hommunity Admin",
-    category: "Community",
-    description:
-      "Smart gate entry and visitor management solution.",
-  },
+
   {
     id: "hommunity-web",
     name: "Hommunity Web",
@@ -167,25 +149,13 @@ export const BUSINESSES: Business[] = [
     description:
       "Official website for the Wowfy platform.",
   },
-  {
-    id: "wowfy-admin",
-    name: "Wowfy Admin",
-    category: "Technology",
-    description:
-      "Administrative dashboard for managing the Wowfy platform.",
-  },
+
 
   // ==================================================
   // Business
   // ==================================================
 
-  {
-    id: "axara-admin",
-    name: "Axara Admin",
-    category: "Business",
-    description:
-      "Administration dashboard for the Axara platform.",
-  },
+
   {
     id: "axara-api",
     name: "Axara API",
@@ -369,13 +339,7 @@ export const BUSINESSES: Business[] = [
       "Customer engagement and communication mobile platform.",
   },
 
-  {
-    id: "xortcut-institute-admin",
-    name: "Xortcut Institute Admin",
-    category: "Mobile Apps",
-    description:
-      "Administrative mobile application for educational institutions.",
-  },
+
   {
     id: "xortlist-parent",
     name: "Xortlist Parent",
@@ -422,13 +386,7 @@ export const BUSINESSES: Business[] = [
     description:
       "Location-based news discovery mobile application.",
   },
-  {
-    id: "newsonmap-admin",
-    name: "NewsOnMap Admin",
-    category: "Mobile Apps",
-    description:
-      "Administration application for the NewsOnMap platform.",
-  },
+
   {
     id: "mapogram-mobile",
     name: "Mapogram",
@@ -443,13 +401,7 @@ export const BUSINESSES: Business[] = [
     description:
       "Complaint reporting and issue tracking application.",
   },
-  {
-    id: "mapogram-admin-panel",
-    name: "Mapogram Admin Panel",
-    category: "Mobile Apps",
-    description:
-      "Administrative dashboard for Mapogram services.",
-  },
+
   {
     id: "mapogram-xortlist",
     name: "Mapogram Xortlist",
