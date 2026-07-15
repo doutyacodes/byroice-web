@@ -17,7 +17,6 @@ function getGroupName(name: string): string {
   if (name.includes("Homedel")) return "Homedel";
   if (name.includes("PersAnalytics")) return "PersAnalytics";
   if (name.includes("Game Trade")) return "Game Trade";
-  if (name.includes("AI Prayer") || name.includes("AI Lawyer") || name.includes("AI Judge")) return "AI Tools";
   
   return name.split(" ")[0];
 }

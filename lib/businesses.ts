@@ -435,7 +435,7 @@ export const BUSINESSES: Business[] = [
   },
   {
     id: "ai-prayer-assistant",
-    name: "AI Prayer Assistant",
+    name: "Prayer Assistant",
     category: "Mobile Apps",
     description:
       "AI-powered guided prayer and spiritual companion.",
@@ -557,14 +557,14 @@ export const BUSINESSES: Business[] = [
 
   {
     id: "ai-lawyer",
-    name: "AI Lawyer",
+    name: "Lawyer",
     category: "Mobile Apps",
     description:
       "AI-powered legal assistant for legal guidance and document analysis.",
   },
   {
     id: "ai-judge",
-    name: "AI Judge",
+    name: "Judge",
     category: "Mobile Apps",
     description:
       "AI-assisted dispute resolution and legal decision support platform.",
