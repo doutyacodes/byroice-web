@@ -528,13 +528,7 @@ export const BUSINESSES: Business[] = [
     description:
       "Curated news briefing mobile application.",
   },
-  {
-    id: "wowfy-admin-mobile",
-    name: "Wowfy Admin",
-    category: "Mobile Apps",
-    description:
-      "Administrative mobile application for the Wowfy platform.",
-  },
+
   {
     id: "newsonmap-mobile",
     name: "NewsOnMap",
