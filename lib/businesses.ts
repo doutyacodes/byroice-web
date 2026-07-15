@@ -130,13 +130,7 @@ export const BUSINESSES: Business[] = [
     description:
       "Interactive mapping challenge platform.",
   },
-  {
-    id: "doutya-ai",
-    name: "Doutya AI",
-    category: "Technology",
-    description:
-      "AI-powered productivity and automation platform.",
-  },
+
 
   {
     id: "xortcut",
@@ -184,27 +178,7 @@ export const BUSINESSES: Business[] = [
   // ==================================================
   // Business
   // ==================================================
-  {
-    id: "doutya-ambition",
-    name: "Doutya Ambition",
-    category: "Business",
-    description:
-      "Goal planning and achievement platform for individuals and teams.",
-  },
-  {
-    id: "doutya-recruit",
-    name: "Doutya Recruit",
-    category: "Business",
-    description:
-      "AI-powered recruitment and hiring management solution.",
-  },
-  {
-    id: "doutya-certification",
-    name: "Doutya Certification",
-    category: "Business",
-    description:
-      "Digital certification and credential verification platform.",
-  },
+
   {
     id: "axara-admin",
     name: "Axara Admin",
@@ -329,13 +303,7 @@ export const BUSINESSES: Business[] = [
     description:
       "Official website for Tenman.",
   },
-  {
-    id: "ghats-restaurant-website",
-    name: "Ghats Restaurant Website",
-    category: "Websites",
-    description:
-      "Official restaurant website with online brand presence.",
-  },
+
 
   // ==================================================
   // Mobile Apps
@@ -354,13 +322,7 @@ export const BUSINESSES: Business[] = [
     description:
       "Healthcare mobile application for nurses and hospital staff.",
   },
-  {
-    id: "doutya-prep-mobile",
-    name: "Doutya Prep WebView Mobile",
-    category: "Mobile Apps",
-    description:
-      "Mobile application for accessing Doutya Prep through WebView.",
-  },
+
 
   {
     id: "knockster-user",
@@ -455,13 +417,7 @@ export const BUSINESSES: Business[] = [
     description:
       "Relationship and matchmaking mobile application.",
   },
-  {
-    id: "doutya-certification-mobile",
-    name: "Doutya Certification",
-    category: "Mobile Apps",
-    description:
-      "Digital certification verification mobile application.",
-  },
+
 
   {
     id: "news-prep-mobile",

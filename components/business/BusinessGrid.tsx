@@ -12,7 +12,6 @@ function getGroupName(name: string): string {
   if (name.includes("Wowfy") || name.includes("Engage")) return "Wowfy";
   if (name.includes("Xortcut") || name.includes("Certification")) return "Xortcut";
   if (name.includes("Xortlist") || name.includes("Recruit")) return "Xortlist";
-  if (name.includes("Doutya")) return "Doutya";
   if (name.includes("Axara") || name.includes("News")) return "News";
   if (name.includes("Knockster")) return "Knockster";
   if (name.includes("Mapogram")) return "Mapogram";
