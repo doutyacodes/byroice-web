@@ -414,28 +414,7 @@ export const BUSINESSES: Business[] = [
   },
 
 
-  {
-    id: "news-prep-mobile",
-    name: "News Prep",
-    category: "Mobile Apps",
-    description:
-      "Curated news briefing mobile application.",
-  },
 
-  {
-    id: "newsonmap-mobile",
-    name: "NewsOnMap",
-    category: "Mobile Apps",
-    description:
-      "Location-based news discovery mobile application.",
-  },
-  {
-    id: "newsonmap-admin",
-    name: "NewsOnMap Admin",
-    category: "Mobile Apps",
-    description:
-      "Administration application for the NewsOnMap platform.",
-  },
   {
     id: "mapogram-mobile",
     name: "Mapogram",
