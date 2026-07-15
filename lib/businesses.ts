@@ -51,26 +51,38 @@ export const BUSINESSES: Business[] = [
     description:
       "Digital patient queue, appointment booking, and hospital visitor management platform.",
   },
-
+  {
+    id: "clinic",
+    name: "Hospital Token Admin",
+    category: "Healthcare",
+    description:
+      "Clinic appointment booking and patient management solution.",
+  },
 
   // ==================================================
   // Community
   // ==================================================
   {
     id: "knockster-org",
-    name: "Knockster Org",
+    name: "Knockster Organization",
     category: "Community",
     description:
       "Organization management platform for the Knockster ecosystem.",
   },
   {
     id: "knockster-super",
-    name: "Knockster Super",
+    name: "Knockster Super Admin",
     category: "Community",
     description:
       "Central super administrator portal for all Knockster deployments.",
   },
-
+  {
+    id: "knockster-safety",
+    name: "Woman Safety Admin Panel",
+    category: "Community",
+    description:
+      "Safety and incident management platform for organizations.",
+  },
   {
     id: "knockster-company",
     name: "Knockster Company",
@@ -80,22 +92,21 @@ export const BUSINESSES: Business[] = [
   },
   {
     id: "knockster-page",
-    name: "Knockster Page",
+    name: "Knockster Landing",
     category: "Community",
     description:
       "Public information and onboarding portal for organizations.",
   },
   {
-    id: "knockster-website",
-    name: "Knockster Website",
+    id: "gatewise",
+    name: "Hommunity Admin",
     category: "Community",
     description:
-      "Official website for the Knockster ecosystem.",
+      "Smart gate entry and visitor management solution.",
   },
-
   {
     id: "hommunity-web",
-    name: "Hommunity Web",
+    name: "Hommunity Landing",
     category: "Community",
     description:
       "Modern apartment and residential community management platform.",
@@ -149,13 +160,25 @@ export const BUSINESSES: Business[] = [
     description:
       "Official website for the Wowfy platform.",
   },
-
+  {
+    id: "wowfy-admin",
+    name: "Wowfy Admin",
+    category: "Technology",
+    description:
+      "Administrative dashboard for managing the Wowfy platform.",
+  },
 
   // ==================================================
   // Business
   // ==================================================
 
-
+  {
+    id: "axara-admin",
+    name: "Axara Admin",
+    category: "Business",
+    description:
+      "Administration dashboard for the Axara platform.",
+  },
   {
     id: "axara-api",
     name: "Axara API",
@@ -165,17 +188,31 @@ export const BUSINESSES: Business[] = [
   },
   {
     id: "axara-co",
-    name: "Axara Co",
+    name: "Axara Kids News",
     category: "Business",
     description:
       "Corporate business platform under the Axara brand.",
   },
   {
     id: "axara-website",
-    name: "Axara Website",
+    name: "Axara News",
     category: "Business",
     description:
       "Official website for Axara products and services.",
+  },
+  {
+    id: "doutya-certification",
+    name: "Doutya Certification",
+    category: "Business",
+    description:
+      "Digital certification and credential verification platform.",
+  },
+  {
+    id: "doutya-recruit",
+    name: "Doutya Recruit",
+    category: "Business",
+    description:
+      "AI-powered recruitment and hiring management solution.",
   },
   {
     id: "qoupled-ai",
@@ -256,7 +293,7 @@ export const BUSINESSES: Business[] = [
 
   {
     id: "tenman-web-page",
-    name: "Tenman Web Page",
+    name: "Tenman Landing",
     category: "Websites",
     description:
       "Official website for Tenman.",
@@ -339,7 +376,13 @@ export const BUSINESSES: Business[] = [
       "Customer engagement and communication mobile platform.",
   },
 
-
+  {
+    id: "xortcut-institute-admin",
+    name: "Xortcut Institute Admin",
+    category: "Mobile Apps",
+    description:
+      "Administrative mobile application for educational institutions.",
+  },
   {
     id: "xortlist-parent",
     name: "Xortlist Parent",
@@ -386,7 +429,13 @@ export const BUSINESSES: Business[] = [
     description:
       "Location-based news discovery mobile application.",
   },
-
+  {
+    id: "newsonmap-admin",
+    name: "NewsOnMap Admin",
+    category: "Mobile Apps",
+    description:
+      "Administration application for the NewsOnMap platform.",
+  },
   {
     id: "mapogram-mobile",
     name: "Mapogram",
@@ -401,7 +450,13 @@ export const BUSINESSES: Business[] = [
     description:
       "Complaint reporting and issue tracking application.",
   },
-
+  {
+    id: "mapogram-admin-panel",
+    name: "Mapogram Admin Panel",
+    category: "Mobile Apps",
+    description:
+      "Administrative dashboard for Mapogram services.",
+  },
   {
     id: "mapogram-xortlist",
     name: "Mapogram Xortlist",
@@ -425,10 +480,17 @@ export const BUSINESSES: Business[] = [
   },
   {
     id: "mapogram-customer-map",
-    name: "Mapogram Customer Map",
+    name: "Mapogram Sales Map",
     category: "Mobile Apps",
     description:
       "Customer location and service mapping application.",
+  },
+  {
+    id: "doutya-certification-mobile",
+    name: "Doutya Certification",
+    category: "Mobile Apps",
+    description:
+      "Digital certification verification mobile application.",
   },
   {
     id: "homedel-customer",

@@ -3,7 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Navbar from "@/components/Navbar";
-import PremiumBackground from "@/components/business/PremiumBackground";
+import Footer from "@/components/Footer";
+import PremiumBackground from "@/components/PremiumBackground";
 import { BUSINESSES } from "@/lib/businesses";
 import { CATEGORY_META } from "@/lib/categoryMeta";
 import { CATEGORY_HIGHLIGHTS, getLongDescription } from "@/lib/businessContent";
@@ -147,6 +148,8 @@ export default async function BusinessDetailPage({
           </div>
         </div>
       </main>
+
+      <Footer />
     </div>
   );
 }

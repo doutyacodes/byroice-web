@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
-import PremiumBackground from "@/components/business/PremiumBackground";
+import Footer from "@/components/Footer";
+import PremiumBackground from "@/components/PremiumBackground";
 import BusinessGrid from "@/components/business/BusinessGrid";
 
 export const metadata: Metadata = {
@@ -30,6 +31,8 @@ export default function BusinessPage() {
           </div>
         </div>
       </main>
+
+      <Footer />
     </div>
   );
 }
