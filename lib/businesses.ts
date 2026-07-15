@@ -143,13 +143,7 @@ export const BUSINESSES: Business[] = [
     description:
       "AI-powered productivity and automation platform.",
   },
-  {
-    id: "doutya",
-    name: "Doutya",
-    category: "Technology",
-    description:
-      "Core technology platform powering the Doutya ecosystem.",
-  },
+
   {
     id: "xortcut",
     name: "Xortcut",
