@@ -26,9 +26,8 @@ export default function ServicesCTA() {
             <h2 className="mx-auto mt-5 max-w-2xl text-3xl font-extrabold leading-[1.15] tracking-tight text-white sm:text-4xl lg:text-5xl">
               Let&apos;s Build Your Next Business
             </h2>
-            <p className="mx-auto mt-5 max-w-lg text-base text-white/60 sm:text-lg">
-              Bring us the idea. We&apos;ll bring the strategy, design,
-              engineering and momentum to make it real.
+            <p className="mx-auto mt-5 max-w-2xl text-base text-white/60 sm:text-lg">
+              Bring us where you&apos;re starting from — an idea, a pivot, or a legacy worth reviving. We&apos;ll bring the strategy, design, engineering and momentum to make it real.
             </p>
 
             <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">

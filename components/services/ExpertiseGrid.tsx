@@ -6,7 +6,6 @@ import {
   TargetIcon,
   SparkIcon,
   CubeIcon,
-  LayoutIcon,
   CodeIcon,
   AIIcon,
   TrendingUpIcon,
@@ -22,59 +21,52 @@ interface Expertise {
 
 const EXPERTISE: Expertise[] = [
   {
-    title: "Business Strategy",
+    title: "Strategic Advisory",
     description:
       "Clear roadmaps and positioning that turn ambition into a plan for growth.",
     icon: TargetIcon,
     span: "large",
   },
   {
-    title: "Brand Identity",
+    title: "Brand & Identity Design",
     description:
-      "Distinct visual identities that make businesses instantly recognizable.",
+      "Distinct identities that make businesses instantly recognizable, in any category.",
     icon: SparkIcon,
     span: "small",
   },
   {
     title: "Product Design",
-    description: "Products shaped around real needs, built to be used and loved.",
+    description: "Physical or digital, shaped around real needs, built to be used and loved.",
     icon: CubeIcon,
     span: "small",
   },
   {
-    title: "UI/UX Design",
+    title: "Engineering",
     description:
-      "Interfaces that feel effortless, intuitive and beautifully considered.",
-    icon: LayoutIcon,
-    span: "small",
-  },
-  {
-    title: "Software Engineering",
-    description:
-      "Robust, scalable systems engineered to perform under real demand.",
+      "Software, hardware, or mechanical — robust systems built to perform under real demand.",
     icon: CodeIcon,
     span: "small",
   },
   {
-    title: "AI Solutions",
+    title: "AI & Emerging Tech",
     description:
-      "Intelligent automation and AI-driven products built for the next decade.",
+      "AI enabled, augmented and embedded wherever it adds real value.",
     icon: AIIcon,
+    span: "small",
+  },
+  {
+    title: "Industrial & Product Engineering",
+    description:
+      "From drawings to first working unit, physical or digital.",
+    icon: TransformIcon,
     span: "wide",
   },
   {
-    title: "Growth Consulting",
+    title: "Growth & Distribution",
     description:
-      "Data-informed strategies that turn early traction into sustainable growth.",
+      "Data-informed strategies that turn early traction into sustainable growth, and get a product into real customers' hands.",
     icon: TrendingUpIcon,
-    span: "small",
-  },
-  {
-    title: "Digital Transformation",
-    description:
-      "Modernizing legacy operations into agile, digital-first businesses.",
-    icon: TransformIcon,
-    span: "small",
+    span: "wide",
   },
 ];
 
@@ -137,18 +129,52 @@ export default function ExpertiseGrid() {
             Our Expertise
           </span>
           <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-white sm:text-4xl lg:text-5xl">
-            Every Discipline a Business Needs
+            Every Discipline a Business Needs.
           </h2>
-          <p className="mx-auto mt-4 max-w-xl text-base text-white/60 sm:text-lg">
-            One team, spanning strategy, design, engineering and growth —
-            aligned around a single outcome.
+          <p className="mx-auto mt-4 max-w-2xl text-base text-white/60 sm:text-lg">
+            The stages above are the timeline every venture moves through. The disciplines below are the skills we apply at every stage — not a separate journey, the toolkit behind this one. And since we&apos;re industry-agnostic, every discipline flexes to the category.
           </p>
         </div>
 
-        <div className="mt-16 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:auto-rows-[190px] lg:grid-cols-4 lg:gap-6">
+        <div className="mt-16 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:auto-rows-[200px] lg:grid-cols-4 lg:gap-6">
           {EXPERTISE.map((item) => (
             <ExpertiseCard key={item.title} item={item} />
           ))}
+        </div>
+
+        <div className="mt-20 overflow-hidden rounded-[32px] border border-white/10 bg-white/[0.02] p-8 text-center backdrop-blur-sm sm:p-12 lg:p-16">
+          <h3 className="text-2xl font-semibold text-white sm:text-3xl">
+            Built for Any Industry.
+          </h3>
+          <p className="mx-auto mt-4 max-w-3xl text-base text-white/70 sm:text-lg">
+            We don&apos;t specialize in a category — we specialize in taking ideas from zero to company, whatever the category.
+          </p>
+          <div className="mt-8 flex flex-wrap justify-center gap-x-4 gap-y-3 text-sm font-medium tracking-wide text-[#FFE100]/80 sm:text-base">
+            <span>Software</span>
+            <span className="text-white/20">·</span>
+            <span>Electronics</span>
+            <span className="text-white/20">·</span>
+            <span>Automotive</span>
+            <span className="text-white/20">·</span>
+            <span>Horology</span>
+            <span className="text-white/20">·</span>
+            <span>Food & Beverage</span>
+            <span className="text-white/20">·</span>
+            <span>Sports</span>
+            <span className="text-white/20">·</span>
+            <span>Events</span>
+            <span className="text-white/20">·</span>
+            <span>Defence</span>
+            <span className="text-white/20">·</span>
+            <span>Media</span>
+            <span className="text-white/20">·</span>
+            <span>News</span>
+            <span className="text-white/20">·</span>
+            <span>Tourism</span>
+            <span className="text-white/20">·</span>
+            <span>Marine</span>
+            <span className="text-white/20">and beyond</span>
+          </div>
         </div>
       </div>
     </section>

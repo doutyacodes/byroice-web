@@ -1,7 +1,7 @@
 "use client";
 
-import { useRef } from "react";
-import { motion, useScroll } from "framer-motion";
+import { motion } from "framer-motion";
+import { ArrowRightIcon } from "./icons";
 
 const NODES = [
   "Idea",
@@ -15,68 +15,76 @@ const NODES = [
   "Scale",
 ];
 
-function RoadmapNode({ label, index }: { label: string; index: number }) {
-  const isEven = index % 2 === 0;
-  const orderContent = isEven ? "lg:order-1" : "lg:order-2";
-  const orderSpacer = isEven ? "lg:order-2" : "lg:order-1";
-
-  return (
-    <motion.div
-      initial={{ opacity: 0, y: 24 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-15%" }}
-      transition={{ duration: 0.5, ease: "easeOut" }}
-      className="relative pl-16 lg:flex lg:items-center lg:gap-16 lg:pl-0"
-    >
-      <span className="absolute left-6 top-1/2 z-10 h-3 w-3 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#FFE100] shadow-[0_0_14px_2px_rgba(255,225,0,0.55)] lg:left-1/2" />
-
-      <div className={`lg:flex-1 ${orderContent} ${isEven ? "lg:text-right" : "lg:text-left"}`}>
-        <div className="inline-flex flex-col rounded-2xl border border-white/10 bg-white/[0.03] px-6 py-4 backdrop-blur-sm transition-colors duration-300 hover:border-[#FFE100]/35">
-          <span className="text-xs font-semibold tracking-widest text-[#FFE100]/70">
-            0{index + 1}
-          </span>
-          <span className="mt-1 text-xl font-semibold text-white">{label}</span>
-        </div>
-      </div>
-
-      <div className={`hidden lg:block lg:flex-1 ${orderSpacer}`} />
-    </motion.div>
-  );
-}
-
 export default function JourneyRoadmap() {
-  const containerRef = useRef<HTMLDivElement>(null);
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ["start 0.85", "end 0.4"],
-  });
-
   return (
-    <section className="px-6 py-24 sm:px-10 sm:py-28 lg:px-24 lg:py-32">
+    <section className="overflow-hidden px-6 pb-24 sm:px-10 sm:pb-28 lg:px-24 lg:pb-32 pt-24">
       <div className="mx-auto max-w-[1600px]">
         <div className="text-center">
           <span className="text-xs font-semibold uppercase tracking-[0.3em] text-[#FFE100]/80">
-            The Full Journey
+            Our Process
           </span>
           <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-white sm:text-4xl lg:text-5xl">
-            From Idea to Scale
+            The Same Rigor, Wherever You Enter.
           </h2>
-          <p className="mx-auto mt-4 max-w-xl text-base text-white/60 sm:text-lg">
-            The complete path every business takes with ByRoice — one
-            deliberate step at a time.
+          <p className="mx-auto mt-4 max-w-3xl text-base text-white/60 sm:text-lg">
+            Every track runs through the same nine-stage discipline. Where you
+            enter depends on where you&apos;re starting from — a new idea begins
+            further back, a legacy brand or existing product usually starts
+            further along. The path is the same either way.
           </p>
         </div>
 
-        <div ref={containerRef} className="relative mx-auto mt-20 max-w-3xl">
-          <div className="absolute left-6 top-0 h-full w-px -translate-x-1/2 bg-white/10 lg:left-1/2" />
-          <motion.div
-            style={{ scaleY: scrollYProgress }}
-            className="absolute left-6 top-0 h-full w-px origin-top -translate-x-1/2 bg-gradient-to-b from-[#FFE100] via-[#FFE100]/70 to-[#FFE100]/20 lg:left-1/2"
-          />
+        <div className="relative mx-auto mt-24">
+          {/* Entry markers */}
+          <div className="absolute -top-12 left-0 right-0 hidden sm:block">
+            <div className="relative h-full w-full">
+              {/* Early marker */}
+              <div className="absolute left-[5%] flex flex-col items-center">
+                <span className="mb-2 text-xs font-semibold uppercase tracking-wider text-[#FFE100]/70">
+                  New Idea
+                </span>
+                <div className="h-6 w-px bg-gradient-to-b from-[#FFE100]/50 to-transparent" />
+                <div className="mt-1 h-2 w-2 rounded-full bg-[#FFE100] shadow-[0_0_10px_rgba(255,225,0,0.8)]" />
+              </div>
+              {/* Mid marker */}
+              <div className="absolute left-[38%] flex flex-col items-center">
+                <span className="mb-2 text-xs font-semibold uppercase tracking-wider text-[#FFE100]/70">
+                  Pivot / Reposition
+                </span>
+                <div className="h-6 w-px bg-gradient-to-b from-[#FFE100]/50 to-transparent" />
+                <div className="mt-1 h-2 w-2 rounded-full bg-[#FFE100] shadow-[0_0_10px_rgba(255,225,0,0.8)]" />
+              </div>
+              {/* Late marker */}
+              <div className="absolute left-[70%] flex flex-col items-center">
+                <span className="mb-2 text-xs font-semibold uppercase tracking-wider text-[#FFE100]/70">
+                  Revive Legacy
+                </span>
+                <div className="h-6 w-px bg-gradient-to-b from-[#FFE100]/50 to-transparent" />
+                <div className="mt-1 h-2 w-2 rounded-full bg-[#FFE100] shadow-[0_0_10px_rgba(255,225,0,0.8)]" />
+              </div>
+            </div>
+          </div>
 
-          <div className="space-y-10 lg:space-y-16">
+          <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between sm:overflow-x-auto sm:pb-8 sm:pt-4 no-scrollbar">
             {NODES.map((node, index) => (
-              <RoadmapNode key={node} label={node} index={index} />
+              <motion.div
+                key={node}
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-10%" }}
+                transition={{ duration: 0.4, delay: index * 0.05 }}
+                className="flex items-center gap-4 sm:shrink-0 sm:flex-col sm:gap-6"
+              >
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-white/10 bg-white/[0.03] text-sm font-semibold text-[#FFE100]/80">
+                  0{index + 1}
+                </div>
+                {index < NODES.length - 1 && (
+                  <div className="hidden h-px w-8 bg-white/10 sm:block lg:w-12 xl:w-16" />
+                )}
+                <span className="text-base font-semibold text-white sm:text-sm">
+                  {node}
+                </span>
+              </motion.div>
             ))}
           </div>
         </div>

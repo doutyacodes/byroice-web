@@ -32,8 +32,8 @@ const FEATURES: Feature[] = [
     icon: AtomIcon,
   },
   {
-    title: "Premium Design",
-    description: "Luxury digital experiences.",
+    title: "Experience First",
+    description: "Every touchpoint designed around the people who actually use it.",
     icon: DiamondIcon,
   },
 ];

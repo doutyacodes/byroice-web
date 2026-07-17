@@ -32,9 +32,9 @@ export default function ServicesHero() {
           </h1>
 
           <p className="mt-7 max-w-2xl text-lg leading-relaxed text-white/75 sm:text-xl">
-            Every successful company begins with a single idea. We transform
-            concepts into thriving businesses through strategy, design,
-            technology and execution.
+            Every business we take on starts from a different place — a blank page, a stalled brand, or a legacy worth carrying
+            forward. We meet you where you are, and bring the strategy, design, engineering and momentum to take it further,
+            in any industry.
           </p>
 
           <motion.div whileHover={{ y: -3 }} whileTap={{ scale: 0.98 }} className="mt-10">

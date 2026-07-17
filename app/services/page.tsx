@@ -3,10 +3,11 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import PremiumBackground from "@/components/PremiumBackground";
 import ServicesHero from "@/components/services/Hero";
-import JourneyTimeline from "@/components/services/JourneyTimeline";
+import OurServices from "@/components/services/OurServices";
+import JourneyRoadmap from "@/components/services/JourneyRoadmap";
+import ReviveInPractice from "@/components/services/ReviveInPractice";
 import ExpertiseGrid from "@/components/services/ExpertiseGrid";
 import WhyByRoice from "@/components/services/WhyByRoice";
-import JourneyRoadmap from "@/components/services/JourneyRoadmap";
 import ServicesCTA from "@/components/services/CTA";
 
 export const metadata: Metadata = {
@@ -23,10 +24,11 @@ export default function ServicesPage() {
 
       <main className="relative z-10">
         <ServicesHero />
-        <JourneyTimeline />
+        <OurServices />
+        <JourneyRoadmap />
+        <ReviveInPractice />
         <ExpertiseGrid />
         <WhyByRoice />
-        <JourneyRoadmap />
         <ServicesCTA />
       </main>
 
