@@ -34,470 +34,208 @@ export const CATEGORY_FILTERS: Array<"All" | BusinessCategory> = [
 ];
 
 export const BUSINESSES: Business[] = [
-  // ==================================================
-  // Healthcare
-  // ==================================================
   {
-    id: "healway",
-    name: "Hospital Token",
-    category: "Healthcare",
-    description:
-      "Complete hospital management platform for healthcare providers.",
+    id: "chancetrade",
+    name: "ChanceTrade",
+    category: "Marketplace",
+    description: "A probability of an event happening based share market, where people buy and trade the share. Purely skill based.",
   },
   {
-    id: "knockster-hospitals",
-    name: "Knockster Hospitals",
-    category: "Healthcare",
-    description:
-      "Digital patient queue, appointment booking, and hospital visitor management platform.",
-  },
-  {
-    id: "clinic",
-    name: "Hospital Token Admin",
-    category: "Healthcare",
-    description:
-      "Clinic appointment booking and patient management solution.",
-  },
-
-  // ==================================================
-  // Community
-  // ==================================================
-  {
-    id: "knockster-org",
-    name: "Knockster Organization",
-    category: "Community",
-    description:
-      "Organization management platform for the Knockster ecosystem.",
-  },
-  {
-    id: "knockster-super",
-    name: "Knockster Super Admin",
-    category: "Community",
-    description:
-      "Central super administrator portal for all Knockster deployments.",
-  },
-  {
-    id: "knockster-safety",
-    name: "Woman Safety Admin Panel",
-    category: "Community",
-    description:
-      "Safety and incident management platform for organizations.",
-  },
-  {
-    id: "knockster-company",
-    name: "Knockster Company",
-    category: "Community",
-    description:
-      "Enterprise visitor, employee, and access management platform.",
-  },
-  {
-    id: "knockster-page",
-    name: "Knockster Landing",
-    category: "Community",
-    description:
-      "Public information and onboarding portal for organizations.",
-  },
-  {
-    id: "gatewise",
-    name: "Hommunity Admin",
-    category: "Community",
-    description:
-      "Smart gate entry and visitor management solution.",
-  },
-  {
-    id: "hommunity-web",
-    name: "Hommunity Landing",
-    category: "Community",
-    description:
-      "Modern apartment and residential community management platform.",
-  },
-
-
-  // ==================================================
-  // Technology
-  // ==================================================
-  {
-    id: "mapogram-challenge",
-    name: "Mapogram Challenge",
-    category: "Technology",
-    description:
-      "Interactive mapping challenge platform.",
-  },
-
-
-  {
-    id: "xortcut",
-    name: "Xortcut",
-    category: "Technology",
-    description:
-      "Smart productivity shortcuts for faster everyday workflows.",
-  },
-  {
-    id: "persanalytics",
-    name: "PersAnalytics (For Individuals)",
-    category: "Technology",
-    description:
-      "Advanced analytics platform delivering personalized business insights.",
-  },
-  {
-    id: "persanalytics-landing",
-    name: "PersAnalytics Landing",
-    category: "Technology",
-    description:
-      "Landing website for the PersAnalytics platform.",
-  },
-  {
-    id: "analytics",
-    name: "Analytics (For Companies)",
-    category: "Technology",
-    description:
-      "Business intelligence and real-time analytics platform.",
-  },
-  {
-    id: "wowfy-site",
-    name: "Wowfy Site",
-    category: "Technology",
-    description:
-      "Official website for the Wowfy platform.",
-  },
-  {
-    id: "wowfy-admin",
-    name: "Wowfy Admin",
-    category: "Technology",
-    description:
-      "Administrative dashboard for managing the Wowfy platform.",
-  },
-
-  // ==================================================
-  // Business
-  // ==================================================
-
-  {
-    id: "axara-admin",
-    name: "Axara Admin",
-    category: "Business",
-    description:
-      "Administration dashboard for the Axara platform.",
-  },
-  {
-    id: "axara-api",
-    name: "Axara API",
-    category: "Business",
-    description:
-      "Backend APIs powering the Axara ecosystem.",
-  },
-  {
-    id: "axara-co",
-    name: "Axara Kids News",
-    category: "Business",
-    description:
-      "Corporate business platform under the Axara brand.",
-  },
-  {
-    id: "axara-website",
-    name: "Axara News",
-    category: "Business",
-    description:
-      "Official website for Axara products and services.",
-  },
-  {
-    id: "doutya-certification",
-    name: "Doutya Certification",
-    category: "Business",
-    description:
-      "Digital certification and credential verification platform.",
-  },
-  {
-    id: "doutya-recruit",
-    name: "Xortlist Recruit",
-    category: "Business",
-    description:
-      "AI-powered recruitment and hiring management solution.",
-  },
-  {
-    id: "qoupled-ai",
-    name: "Qoupled AI",
-    category: "Business",
-    description:
-      "AI-powered relationship and matchmaking platform.",
+    id: "gigstar",
+    name: "Gigstar",
+    category: "Marketplace",
+    description: "A gig application for small jobs and requirements. Gig workers and job givers have profiles and ratings.",
   },
   {
     id: "homedel",
     name: "Homedel",
     category: "Business",
-    description:
-      "Complete restaurant ordering and home delivery management platform.",
+    description: "A delivery app for hotels and restaurants, bypassing conventional food delivery apps with embedded logistics tech.",
   },
   {
-    id: "homedel-merchant",
-    name: "Homedel Merchant",
-    category: "Business",
-    description:
-      "Restaurant dashboard for managing menus, orders, and deliveries.",
-  },
-  {
-    id: "hourloom",
-    name: "Hourloom",
-    category: "Business",
-    description:
-      "Scheduling and workforce management platform.",
-  },
-
-  // ==================================================
-  // Media
-  // ==================================================
-  {
-    id: "ping-tales",
-    name: "Ping Tales",
-    category: "Media",
-    description:
-      "Digital storytelling and publishing platform.",
-  },
-
-  {
-    id: "news-prep",
-    name: "News Prep",
-    category: "Media",
-    description:
-      "Curated news preparation and briefing platform.",
-  },
-  {
-    id: "newsonmap",
-    name: "NewsOnMap",
-    category: "Media",
-    description:
-      "Location-based news discovery platform.",
-  },
-
-
-  // ==================================================
-  // Marketplace
-  // ==================================================
-  {
-    id: "game-trade-app",
-    name: "Game Trade App",
-    category: "Marketplace",
-    description:
-      "Marketplace for buying, selling, and trading video games.",
-  },
-
-  // ==================================================
-  // Corporate
-  // ==================================================
-
-
-  // ==================================================
-  // Websites
-  // ==================================================
-
-
-  {
-    id: "tenman-web-page",
-    name: "Tenman Landing",
-    category: "Websites",
-    description:
-      "Official website for Tenman.",
-  },
-
-
-  // ==================================================
-  // Mobile Apps
-  // ==================================================
-  {
-    id: "knockster-safety-flutter",
-    name: "Woman Safety Mobile App",
-    category: "Mobile Apps",
-    description:
-      "Flutter mobile application for enterprise safety and emergency management.",
-  },
-  {
-    id: "knockster-mobile-nurse",
-    name: "Knockster Mobile Nurse",
-    category: "Mobile Apps",
-    description:
-      "Healthcare mobile application for nurses and hospital staff.",
-  },
-
-
-  {
-    id: "knockster-user",
-    name: "Knockster User",
-    category: "Mobile Apps",
-    description:
-      "Resident and employee mobile application for visitor approvals and access.",
-  },
-  {
-    id: "knockster-security",
-    name: "Knockster Security",
-    category: "Mobile Apps",
-    description:
-      "Security guard application for visitor verification and gate operations.",
-  },
-  {
-    id: "wowfy-mobile",
-    name: "Wowfy",
-    category: "Mobile Apps",
-    description:
-      "Official Wowfy mobile application.",
-  },
-  {
-    id: "wowfy-lite",
-    name: "Wowfy Lite",
-    category: "Mobile Apps",
-    description:
-      "Lightweight version of the Wowfy mobile application.",
-  },
-  {
-    id: "wowfy-team",
-    name: "Wowfy Team",
-    category: "Mobile Apps",
-    description:
-      "Team collaboration and management application for Wowfy.",
-  },
-  {
-    id: "hommunity-mobile",
+    id: "hommunity",
     name: "Hommunity",
-    category: "Mobile Apps",
-    description:
-      "Apartment and residential community management mobile application.",
+    category: "Community",
+    description: "Apartment / Society management app with app-based security.",
   },
   {
     id: "tenman-app",
     name: "Tenman App",
-    category: "Mobile Apps",
-    description:
-      "Official mobile application for Tenman.",
+    category: "Business",
+    description: "Tenant management app with monitored transactions and a double approval system.",
   },
   {
-    id: "engage-mobile",
-    name: "Engage",
-    category: "Mobile Apps",
-    description:
-      "Customer engagement and communication mobile platform.",
-  },
-
-  {
-    id: "xortcut-institute-admin",
-    name: "Xortcut Institute Admin",
-    category: "Mobile Apps",
-    description:
-      "Administrative mobile application for educational institutions.",
+    id: "hourloom",
+    name: "Hourloom",
+    category: "Marketplace",
+    description: "Bespoke watch company with an additional creator marketplace where designers can sell or showcase their watch designs.",
   },
   {
-    id: "xortlist-parent",
-    name: "Xortlist Parent",
-    category: "Mobile Apps",
-    description:
-      "Parent companion application for the Xortlist platform.",
-  },
-  {
-    id: "ai-prayer-assistant",
-    name: "Prayer Assistant",
-    category: "Mobile Apps",
-    description:
-      "AI-powered guided prayer and spiritual companion.",
-  },
-
-  {
-    id: "ping-tales-mobile",
-    name: "Ping Tales",
-    category: "Mobile Apps",
-    description:
-      "Digital storytelling and reading mobile application.",
-  },
-  {
-    id: "qoupled-mobile",
-    name: "Qoupled",
-    category: "Mobile Apps",
-    description:
-      "Relationship and matchmaking mobile application.",
-  },
-
-
-
-  {
-    id: "mapogram-mobile",
-    name: "Mapogram",
-    category: "Mobile Apps",
-    description:
-      "Interactive mapping and geospatial mobile platform.",
-  },
-  {
-    id: "mapogram-complaints",
-    name: "Mapogram Complaints",
-    category: "Mobile Apps",
-    description:
-      "Complaint reporting and issue tracking application.",
-  },
-  {
-    id: "mapogram-admin-panel",
-    name: "Mapogram Admin Panel",
-    category: "Mobile Apps",
-    description:
-      "Administrative dashboard for Mapogram services.",
-  },
-  {
-    id: "mapogram-xortlist",
-    name: "Mapogram Xortlist",
-    category: "Mobile Apps",
-    description:
-      "Mapogram integration for the Xortlist platform.",
-  },
-  {
-    id: "mapogram-opsmap",
-    name: "Mapogram OpsMap",
-    category: "Mobile Apps",
-    description:
-      "Operational mapping and field management application.",
-  },
-  {
-    id: "mapogram-asset-map",
-    name: "Mapogram Asset Map",
-    category: "Mobile Apps",
-    description:
-      "Asset tracking and geospatial management application.",
-  },
-  {
-    id: "mapogram-customer-map",
-    name: "Mapogram Sales Map",
-    category: "Mobile Apps",
-    description:
-      "Customer location and service mapping application.",
-  },
-  {
-    id: "doutya-certification-mobile",
-    name: "Doutya Certification",
-    category: "Mobile Apps",
-    description:
-      "Digital certification verification mobile application.",
-  },
-  {
-    id: "homedel-customer",
-    name: "Homedel Customer",
-    category: "Mobile Apps",
-    description:
-      "Customer application for ordering food and tracking home deliveries.",
-  },
-  {
-    id: "homedel-merchant-mobile",
-    name: "Homedel Merchant",
-    category: "Mobile Apps",
-    description:
-      "Restaurant application for managing orders, menus, and deliveries.",
-  },
-
-  {
-    id: "ai-lawyer",
-    name: "Lawyer",
-    category: "Mobile Apps",
-    description:
-      "AI-powered legal assistant for legal guidance and document analysis.",
-  },
-  {
-    id: "ai-judge",
+    id: "judge",
     name: "Judge",
-    category: "Mobile Apps",
-    description:
-      "AI-assisted dispute resolution and legal decision support platform.",
+    category: "Technology",
+    description: "Zero Court; an AI-powered judge provided with full conditions to give a judgement, including appeals.",
   },
+  {
+    id: "knockster",
+    name: "Knockster",
+    category: "Business",
+    description: "Visitor management app for industries, tech parks, hospitals, schools, and high-security areas with 4-layer security.",
+  },
+  {
+    id: "lawyer",
+    name: "Lawyer",
+    category: "Technology",
+    description: "AI-powered FriendInLaw that provides legal strategies. Intended to be a law first responder.",
+  },
+  {
+    id: "mapogram",
+    name: "Mapogram",
+    category: "Technology",
+    description: "A suite of map-based applications including Mapogram Social, SalesOnMap, OpsOnMap, AssetsOnMap, and ComplaintsOnMap.",
+  },
+  {
+    id: "newsome-news-group",
+    name: "Newsome News Group",
+    category: "Media",
+    description: "A comprehensive news ecosystem featuring Multi Perspective News, NewsOnMap, NewsPrep, and NewsTech.",
+  },
+  {
+    id: "persanalytics",
+    name: "PersAnalytics",
+    category: "Technology",
+    description: "A personality testing platform for individuals, companies, and doctors. Includes most known personality tests.",
+  },
+  {
+    id: "pingtales",
+    name: "PingTales",
+    category: "Media",
+    description: "A mobile chat-based storytelling platform where stories are presented as chats. Users can read and create stories.",
+  },
+  {
+    id: "keekkoos",
+    name: "Keekkoos",
+    category: "Media",
+    description: "Media platform for children aged 3-12 featuring chat/image-based stories, daily news, and kids' contests.",
+  },
+  {
+    id: "silent-prayer",
+    name: "Silent Prayer",
+    category: "Community",
+    description: "Religious app to find places of worship, featuring an AI-powered prayer helper and digital pooja support.",
+  },
+  {
+    id: "qoupled",
+    name: "Qoupled",
+    category: "Community",
+    description: "Matrimony and matchmaker app based on personality matching and interests, powered by an AI assistant.",
+  },
+  {
+    id: "womsafe",
+    name: "WomSafe",
+    category: "Community",
+    description: "Safety app for women and kids that checks in at designated times with safe and unsafe PIN systems.",
+  },
+  {
+    id: "wowfy",
+    name: "Wowfy",
+    category: "Corporate",
+    description: "A challenge-based engagement platform for brands, celebrities, schools, colleges, and offices.",
+  },
+  {
+    id: "xortcut",
+    name: "Xortcut",
+    category: "Technology",
+    description: "Career guidance app recommending suitable sectors, clusters, and careers based on personality from Class 5 onwards.",
+  },
+  {
+    id: "xertify",
+    name: "Xertify",
+    category: "Technology",
+    description: "AI-powered self-testing and certification platform for random topics.",
+  },
+  {
+    id: "xortlist",
+    name: "Xortlist",
+    category: "Corporate",
+    description: "Career pipeline platform where people follow dream jobs, complete challenges, and earn rewards while companies identify talent.",
+  },
+  {
+    id: "ecior",
+    name: "ECIOR",
+    category: "Corporate",
+    description: "Luxury watch company.",
+  },
+  {
+    id: "jb-beha",
+    name: "JB Beha",
+    category: "Corporate",
+    description: "Luxury clock company -- revived 19th-century brand.",
+  },
+  {
+    id: "dua-2-wheelers",
+    name: "Dua 2 Wheelers",
+    category: "Corporate",
+    description: "Electric two-wheelers.",
+  },
+  {
+    id: "tritwa-trikes",
+    name: "Tritwa Trikes",
+    category: "Corporate",
+    description: "Electric and non-electric reverse trikes.",
+  },
+  {
+    id: "roice-manta",
+    name: "Roice Manta",
+    category: "Corporate",
+    description: "Wing-in-Ground effect drones for military and personal use.",
+  },
+  {
+    id: "bluebox",
+    name: "BlueBox",
+    category: "Technology",
+    description: "Bolt-on conversion kit for 2 and 3 wheelers from ICE to electric/hybrid.",
+  },
+  {
+    id: "oarwars",
+    name: "OarWars",
+    category: "Corporate",
+    description: "A revolutionary new boat-based sport.",
+  },
+  {
+    id: "atheleto",
+    name: "Atheleto",
+    category: "Corporate",
+    description: "A completely new approach to track and field games.",
+  },
+  {
+    id: "spellbee",
+    name: "SpellBee",
+    category: "Community",
+    description: "Spelling Bee competition for schools.",
+  },
+  {
+    id: "raindrops-xp",
+    name: "RainDrops XP",
+    category: "Business",
+    description: "AI-powered curated tours, expeditions, and experiences.",
+  },
+  {
+    id: "imhof-mukle",
+    name: "Imhof & Mukle",
+    category: "Corporate",
+    description: "High-end audio -- revived 19th-century brand.",
+  },
+  {
+    id: "roice-ratings",
+    name: "Roice Ratings",
+    category: "Business",
+    description: "Proprietary rating systems and rankings such as hotel compatibility, tourism viability, and language power.",
+  },
+  {
+    id: "zuppdate",
+    name: "Zuppdate",
+    category: "Healthcare",
+    description: "Live updates and interaction panels for bookings and services, supporting tokens for hospitals and queue-based systems.",
+  }
 ];
