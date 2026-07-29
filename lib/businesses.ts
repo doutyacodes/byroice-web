@@ -69,6 +69,7 @@ export const BUSINESSES: Business[] = [
     name: "Hourloom",
     category: "Marketplace",
     description: "Bespoke watch company with an additional creator marketplace where designers can sell or showcase their watch designs.",
+    logo: "/assets/logos/hourloom.png",
   },
   {
     id: "judge",
@@ -81,6 +82,7 @@ export const BUSINESSES: Business[] = [
     name: "Knockster",
     category: "Business",
     description: "Visitor management app for industries, tech parks, hospitals, schools, and high-security areas with 4-layer security.",
+    logo: "/assets/logos/knockster.png",
   },
   {
     id: "lawyer",
@@ -93,6 +95,7 @@ export const BUSINESSES: Business[] = [
     name: "Mapogram",
     category: "Technology",
     description: "A suite of map-based applications including Mapogram Social, SalesOnMap, OpsOnMap, AssetsOnMap, and ComplaintsOnMap.",
+    logo: "/assets/logos/mapogram.png",
   },
   {
     id: "newsome-news-group",
@@ -111,6 +114,7 @@ export const BUSINESSES: Business[] = [
     name: "PingTales",
     category: "Media",
     description: "A mobile chat-based storytelling platform where stories are presented as chats. Users can read and create stories.",
+    logo: "/assets/logos/pingtales.png",
   },
   {
     id: "keekkoos",
@@ -141,12 +145,14 @@ export const BUSINESSES: Business[] = [
     name: "Wowfy",
     category: "Corporate",
     description: "A challenge-based engagement platform for brands, celebrities, schools, colleges, and offices.",
+    logo: "/assets/logos/wowfy.png",
   },
   {
     id: "xortcut",
     name: "Xortcut",
     category: "Technology",
     description: "Career guidance app recommending suitable sectors, clusters, and careers based on personality from Class 5 onwards.",
+    logo: "/assets/logos/xortcut.png",
   },
   {
     id: "xertify",

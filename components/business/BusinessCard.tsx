@@ -45,13 +45,21 @@ export default function BusinessCard({ business }: { business: Business }) {
       />
 
       <div className="relative flex h-full flex-col">
-        <div className="relative h-11 w-11 shrink-0 overflow-hidden rounded-xl border border-white/10">
-          <Image src={image} alt="" fill sizes="44px" className="object-cover" />
-        </div>
+        {business.logo ? (
+          <div className="relative h-11 shrink-0 mb-1 flex justify-start">
+            <img src={business.logo} alt={business.name} className="h-full w-auto object-contain" />
+          </div>
+        ) : (
+          <>
+            <div className="relative h-11 w-11 shrink-0 overflow-hidden rounded-xl border border-white/10">
+              <Image src={image} alt="" fill sizes="44px" className="object-cover" />
+            </div>
 
-        <h3 className="mt-4 text-lg font-semibold leading-snug text-white">
-          {business.name}
-        </h3>
+            <h3 className="mt-4 text-lg font-semibold leading-snug text-white">
+              {business.name}
+            </h3>
+          </>
+        )}
 
         <p className="mt-2 flex-1 text-sm leading-relaxed text-white/60 line-clamp-2">
           {business.description}

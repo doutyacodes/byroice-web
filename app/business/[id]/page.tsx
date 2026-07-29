@@ -93,9 +93,15 @@ export default async function BusinessDetailPage({
             )}
           </div>
 
-          <h1 className="mt-4 text-3xl font-extrabold tracking-tight text-white sm:text-4xl lg:text-5xl">
-            {business.name}
-          </h1>
+          {business.logo ? (
+            <div className="mt-4 h-12 sm:h-16 shrink-0 flex justify-start">
+              <img src={business.logo} alt={business.name} className="h-full w-auto object-contain" />
+            </div>
+          ) : (
+            <h1 className="mt-4 text-3xl font-extrabold tracking-tight text-white sm:text-4xl lg:text-5xl">
+              {business.name}
+            </h1>
+          )}
           <p className="mt-4 max-w-2xl text-lg leading-relaxed text-white/80">
             {business.description}
           </p>
