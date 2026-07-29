@@ -81,7 +81,7 @@ export default function QuickChat() {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.7, ease: "easeOut", delay: 0.2 }}
-      className="w-full max-w-[280px] rounded-[24px] bg-[#FFE100] p-5 shadow-2xl shadow-black/40 sm:p-6"
+      className="w-full max-w-[280px] rounded-[32px] bg-[#FFE100] p-5 shadow-2xl shadow-black/40 sm:p-6"
     >
       <Image
         src="/assets/logo-black.png"
