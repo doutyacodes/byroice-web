@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "ByRoice — We Create Businesses",
+  title: "ByRoice | Venture Architecture & Business Innovation",
   description:
-    "From Concept to Company. For Our Clients. For Ourselves.",
+    "ByRoice is a venture architecture firm that creates new ventures, transforms existing companies and revives legacy businesses across industries.",
 };
 
 export default function RootLayout({
