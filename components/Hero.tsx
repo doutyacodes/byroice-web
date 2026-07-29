@@ -1,127 +1,75 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import Image from "next/image";
-import { AnimatePresence, motion } from "framer-motion";
-import QuickChat from "./QuickChat";
-
-const WING_IMAGES = [
-  {
-    src: "/assets/hero-wing.png",
-    alt: "Winged microphone stand, the ByRoice emblem",
-  },
-  {
-    src: "/assets/hero-wing-2.png",
-    alt: "Four-winged microphone stand, the ByRoice emblem",
-  },
-];
-
-const HERO_TAGLINES = [
-  {
-    heading: "We Create Businesses",
-    subtitle: "From Concept to Company. For Our Clients. For Ourselves.",
-  },
-  {
-    heading: "We Build Brands",
-    subtitle: "From Idea to Identity. Crafted with Purpose.",
-  },
-  {
-    heading: "We Grow Ventures",
-    subtitle: "From Vision to Value. For Every Business We Touch.",
-  },
-  {
-    heading: "We Shape Futures",
-    subtitle: "From Passion to Platform. Built to Last.",
-  },
-];
+import { motion } from "framer-motion";
+import Link from "next/link";
+import { ArrowRightIcon } from "@/components/services/icons";
 
 export default function Hero() {
-  const [wingIndex, setWingIndex] = useState(0);
-  const [taglineIndex, setTaglineIndex] = useState(0);
-
-  useEffect(() => {
-    const id = setInterval(() => {
-      setWingIndex((index) => (index + 1) % WING_IMAGES.length);
-    }, 5000);
-    return () => clearInterval(id);
-  }, []);
-
-  useEffect(() => {
-    const id = setInterval(() => {
-      setTaglineIndex((index) => (index + 1) % HERO_TAGLINES.length);
-    }, 4000);
-    return () => clearInterval(id);
-  }, []);
-
   return (
-    <section className="bg-black px-6 pb-16 pt-10 sm:px-10 sm:pb-20 lg:px-24 lg:pb-14">
-      <div className="relative mx-auto flex max-w-[1600px] flex-col items-center gap-14 lg:flex-row lg:items-end lg:justify-between lg:gap-8 lg:min-h-[480px] xl:min-h-[550px] 2xl:min-h-[610px]">
-        <motion.div
-          initial={{ opacity: 0, y: 32 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, ease: "easeOut" }}
-          className="order-1 flex min-h-[110px] flex-col items-center text-center sm:min-h-[130px] lg:order-1 lg:min-h-[145px] lg:shrink-0 lg:items-start lg:text-left"
+    <section className="relative min-h-[90vh] flex flex-col justify-center overflow-hidden">
+      {/* Background Video */}
+      <div className="absolute inset-0 z-0">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="h-full w-full object-cover"
         >
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={taglineIndex}
-              initial={{ opacity: 0, y: 12 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -12 }}
-              transition={{ duration: 0.6, ease: "easeOut" }}
-              className="flex flex-col items-center lg:items-start"
-            >
-              <h1 className="max-w-xs text-3xl font-extrabold leading-[1.1] tracking-tight text-white sm:max-w-md sm:text-4xl lg:max-w-xl lg:text-[38px] xl:max-w-2xl xl:text-[44px] 2xl:text-[48px]">
-                {HERO_TAGLINES[taglineIndex].heading}
-              </h1>
-              <p className="mt-5 max-w-sm text-base leading-relaxed text-white/90 sm:max-w-md sm:text-lg lg:max-w-xl lg:text-[18px]">
-                {HERO_TAGLINES[taglineIndex].subtitle}
-              </p>
-            </motion.div>
-          </AnimatePresence>
-        </motion.div>
+          <source src="/assets/bg.mp4" type="video/mp4" />
+        </video>
+        {/* Black Overlay */}
+        <div className="absolute inset-0 bg-black/70" />
+      </div>
 
-        <div className="order-2 mx-auto w-full max-w-[260px] sm:max-w-[340px] md:max-w-[400px] lg:order-none lg:absolute lg:inset-y-0 lg:left-1/2 lg:flex lg:max-w-[420px] lg:-translate-x-1/2 lg:items-end xl:max-w-[480px] 2xl:max-w-[520px]">
-          <motion.div
-            initial={{ opacity: 0, scale: 0.94 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, ease: "easeOut", delay: 0.1 }}
-            className="w-full"
+      <div className="relative z-10 mx-auto w-full max-w-[1600px] px-6 py-20 sm:px-10 lg:px-24">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="flex flex-col items-center text-center"
+        >
+          <div className="flex items-center gap-4">
+            <span className="h-px w-8 bg-[#FFE100]/50" />
+            <span className="text-xs font-semibold uppercase tracking-[0.3em] text-[#FFE100]/80">
+              The 0→1 Company
+            </span>
+            <span className="h-px w-8 bg-[#FFE100]/50" />
+          </div>
+
+          <h1 className="mt-8 max-w-4xl text-4xl font-extrabold leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-[64px]">
+            In the beginning, there is ByRoice.
+          </h1>
+
+          <p className="mt-6 max-w-2xl text-xl leading-relaxed text-[#FFE100]/90 sm:text-2xl font-medium">
+            We create what does not yet exist.
+          </p>
+
+          <p className="mt-6 max-w-3xl text-base leading-relaxed text-white/70 sm:text-lg">
+            ByRoice is a 0→1 project, product and venture development company. We conceptualise, research, strategise, design, prototype and build new products, projects and businesses—for our clients and ourselves.
+          </p>
+
+          <motion.div 
+            className="mt-12 flex flex-col sm:flex-row gap-4 w-full sm:w-auto"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
           >
-            <motion.div
-              animate={{ y: [0, -14, 0] }}
-              transition={{
-                duration: 5,
-                repeat: Infinity,
-                ease: "easeInOut",
-              }}
-              className="relative aspect-[992/1112] w-full"
+            <Link
+              href="#start-something"
+              className="inline-flex items-center justify-center gap-2 rounded-full bg-[#FFE100] px-8 py-4 text-base font-semibold text-black shadow-lg shadow-[#FFE100]/10 transition-shadow hover:shadow-xl hover:shadow-[#FFE100]/20 w-full sm:w-auto"
             >
-              {WING_IMAGES.map((wing, index) => (
-                <motion.div
-                  key={wing.src}
-                  className="absolute inset-0"
-                  initial={false}
-                  animate={{ opacity: index === wingIndex ? 1 : 0 }}
-                  transition={{ duration: 1, ease: "easeInOut" }}
-                >
-                  <Image
-                    src={wing.src}
-                    alt={wing.alt}
-                    fill
-                    priority={index === 0}
-                    sizes="(min-width: 1536px) 520px, (min-width: 1280px) 480px, (min-width: 1024px) 420px, (min-width: 768px) 400px, (min-width: 640px) 340px, 260px"
-                    className="object-contain"
-                  />
-                </motion.div>
-              ))}
-            </motion.div>
+              Start Something
+            </Link>
+            <Link
+              href="#explore"
+              className="inline-flex items-center justify-center gap-2 rounded-full border border-white/20 bg-white/5 px-8 py-4 text-base font-semibold text-white transition-colors hover:bg-white/10 hover:border-white/30 w-full sm:w-auto"
+            >
+              Explore ByRoice
+              <ArrowRightIcon className="h-4 w-4" />
+            </Link>
           </motion.div>
-        </div>
-
-        <div className="order-3 flex justify-center lg:order-2 lg:flex-none lg:justify-end">
-          <QuickChat />
-        </div>
+        </motion.div>
       </div>
     </section>
   );
