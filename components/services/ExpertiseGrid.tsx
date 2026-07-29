@@ -3,13 +3,13 @@
 import { motion } from "framer-motion";
 import type { ComponentType, SVGProps } from "react";
 import {
-  TargetIcon,
-  SparkIcon,
-  CubeIcon,
-  CodeIcon,
-  AIIcon,
-  TransformIcon,
-} from "./icons";
+  Lightbulb,
+  Map,
+  SearchCheck,
+  PenTool,
+  FlaskConical,
+  Building2,
+} from "lucide-react";
 
 interface Pillar {
   title: string;
@@ -28,7 +28,7 @@ const PILLARS: Pillar[] = [
       "New venture, product and service concepts",
       "Category creation and future-direction exercises"
     ],
-    icon: SparkIcon,
+    icon: Lightbulb,
   },
   {
     title: "Strategy and venture architecture",
@@ -39,7 +39,7 @@ const PILLARS: Pillar[] = [
       "Positioning, differentiation and market-entry direction",
       "Venture structure, roadmap and ecosystem design"
     ],
-    icon: TargetIcon,
+    icon: Map,
   },
   {
     title: "Research and validation",
@@ -50,7 +50,7 @@ const PILLARS: Pillar[] = [
       "Concept evaluation and risk identification",
       "Pilot design, testing and validation"
     ],
-    icon: AIIcon,
+    icon: SearchCheck,
   },
   {
     title: "Design",
@@ -61,7 +61,7 @@ const PILLARS: Pillar[] = [
       "Brand identity and communication systems",
       "Experience, packaging and system design"
     ],
-    icon: CubeIcon,
+    icon: PenTool,
   },
   {
     title: "R&D and prototyping",
@@ -72,7 +72,7 @@ const PILLARS: Pillar[] = [
       "Technical exploration and mechanism development",
       "MVPs, demonstrators and pilot systems"
     ],
-    icon: CodeIcon,
+    icon: FlaskConical,
   },
   {
     title: "Venture development",
@@ -83,7 +83,7 @@ const PILLARS: Pillar[] = [
       "Launch-readiness and handover",
       "Spin-out, partnership or continued build pathways"
     ],
-    icon: TransformIcon,
+    icon: Building2,
   },
 ];
 
