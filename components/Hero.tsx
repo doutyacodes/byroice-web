@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { ArrowRightIcon } from "@/components/services/icons";
+import QuickChat from "./QuickChat";
 
 export default function Hero() {
   return (
@@ -70,6 +71,11 @@ export default function Hero() {
             </Link>
           </motion.div>
         </motion.div>
+      </div>
+
+      {/* QuickChat Bot - Floating at bottom right */}
+      <div className="absolute bottom-10 right-10 z-50 hidden lg:block">
+        <QuickChat />
       </div>
     </section>
   );
