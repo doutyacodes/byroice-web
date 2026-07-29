@@ -71,6 +71,7 @@ export default function Hero() {
               <ArrowRightIcon className="h-4 w-4" />
             </Link>
           </motion.div>
+          </motion.div>
 
           <div className="mt-16 flex justify-center w-full lg:mt-0 lg:w-auto lg:absolute lg:bottom-10 lg:right-10 z-50">
             <QuickChat />
