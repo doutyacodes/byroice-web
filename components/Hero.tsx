@@ -1,8 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Link from "next/link";
-import { ArrowRightIcon } from "@/components/services/icons";
 import QuickChat from "./QuickChat";
 
 export default function Hero() {
@@ -50,27 +48,6 @@ export default function Hero() {
           <p className="mt-6 max-w-3xl text-base leading-relaxed text-white/70 sm:text-lg">
             ByRoice is a 0→1 project, product and venture development company. We conceptualise, research, strategise, design, prototype and build new products, projects and businesses—for our clients and ourselves.
           </p>
-
-          <motion.div 
-            className="mt-12 flex flex-col sm:flex-row gap-4 w-full sm:w-auto"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-          >
-            <Link
-              href="#start-something"
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-[#FFE100] px-8 py-4 text-base font-semibold text-black shadow-lg shadow-[#FFE100]/10 transition-shadow hover:shadow-xl hover:shadow-[#FFE100]/20 w-full sm:w-auto"
-            >
-              Start Something
-            </Link>
-            <Link
-              href="#explore"
-              className="inline-flex items-center justify-center gap-2 rounded-full border border-white/20 bg-white/5 px-8 py-4 text-base font-semibold text-white transition-colors hover:bg-white/10 hover:border-white/30 w-full sm:w-auto"
-            >
-              Explore ByRoice
-              <ArrowRightIcon className="h-4 w-4" />
-            </Link>
-          </motion.div>
           </motion.div>
 
           <div className="mt-16 flex justify-center w-full lg:mt-0 lg:w-auto lg:absolute lg:bottom-10 lg:right-10 z-50">
