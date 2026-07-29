@@ -81,14 +81,14 @@ export default function QuickChat() {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.7, ease: "easeOut", delay: 0.2 }}
-      className="w-full max-w-[320px] rounded-[32px] bg-[#FFE100] p-7 shadow-2xl shadow-black/40 sm:p-8"
+      className="w-full max-w-[280px] rounded-[24px] bg-[#FFE100] p-5 shadow-2xl shadow-black/40 sm:p-6"
     >
       <Image
         src="/assets/logo-black.png"
         alt="ByRoice"
         width={669}
         height={238}
-        className="mx-auto h-8 w-auto"
+        className="mx-auto h-6 w-auto"
       />
 
       <AnimatePresence mode="wait">
@@ -100,19 +100,19 @@ export default function QuickChat() {
             exit={{ opacity: 0 }}
             transition={{ duration: 0.25 }}
           >
-            <h2 className="mb-6 mt-4 text-center text-lg font-semibold text-black sm:text-xl">
+            <h2 className="mb-4 mt-3 text-center text-base font-semibold text-black sm:text-lg">
               Choose your journey
             </h2>
 
-            <div className="flex flex-col gap-3.5">
+            <div className="flex flex-col gap-2.5">
               {MENU_ITEMS.map((item) => (
                 <motion.button
                   key={item.key}
                   type="button"
                   onClick={() => startFlow(item.key)}
-                  whileHover={{ y: -2, boxShadow: "0 10px 20px rgba(0,0,0,0.18)" }}
+                  whileHover={{ y: -2, boxShadow: "0 8px 16px rgba(0,0,0,0.15)" }}
                   whileTap={{ scale: 0.98 }}
-                  className="w-full rounded-full bg-white px-6 py-[18px] text-[15px] font-semibold text-black transition-shadow"
+                  className="w-full rounded-full bg-white px-5 py-3 text-sm font-semibold text-black transition-shadow"
                 >
                   {item.label}
                 </motion.button>
