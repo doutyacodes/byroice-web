@@ -71,9 +71,14 @@ export default function CareerPathways() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-10%" }}
               transition={{ duration: 0.5 }}
-              className="grid grid-cols-1 lg:grid-cols-12 gap-12 rounded-3xl border border-white/10 bg-white/[0.03] p-8 sm:p-12"
+              whileHover={{ y: -6 }}
+              className="group relative grid grid-cols-1 lg:grid-cols-12 gap-12 rounded-3xl border border-white/10 bg-white/[0.03] p-8 sm:p-12 shadow-lg shadow-black/40 backdrop-blur-sm transition-[border-color,box-shadow] duration-300 hover:border-[#FFE100]/35 hover:shadow-2xl hover:shadow-[#FFE100]/5 overflow-hidden"
             >
-              <div className="lg:col-span-5">
+              <div
+                aria-hidden="true"
+                className="pointer-events-none absolute -left-24 -top-24 h-64 w-64 rounded-full bg-[#FFE100]/10 opacity-20 blur-3xl transition-opacity duration-300 group-hover:opacity-50"
+              />
+              <div className="lg:col-span-5 relative z-10">
                 <span className="text-[#FFE100] text-xl font-bold tracking-widest">{pathway.number}.</span>
                 <h3 className="mt-4 text-3xl font-bold text-white">{pathway.title}</h3>
                 <p className="mt-4 text-xl font-medium text-[#FFE100]/90 leading-relaxed">{pathway.description}</p>

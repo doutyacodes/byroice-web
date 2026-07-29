@@ -8,6 +8,7 @@ import WhatWeDo from "@/components/company/WhatWeDo";
 import Organization from "@/components/company/Organization";
 import Philosophy from "@/components/company/Philosophy";
 import Founder from "@/components/company/Founder";
+import WhatBeginsHere from "@/components/company/WhatBeginsHere";
 
 export const metadata: Metadata = {
   title: "Company — ByRoice",
@@ -28,6 +29,7 @@ export default function CompanyPage() {
         <Organization />
         <Philosophy />
         <Founder />
+        <WhatBeginsHere />
       </main>
 
       <Footer />

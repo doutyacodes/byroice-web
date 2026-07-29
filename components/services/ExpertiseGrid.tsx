@@ -131,11 +131,8 @@ export default function ExpertiseGrid() {
     <section className="px-6 py-24 sm:px-10 sm:py-28 lg:px-24 lg:py-32 bg-white/[0.01]">
       <div className="mx-auto max-w-[1600px]">
         <div className="text-center">
-          <span className="text-xs font-semibold uppercase tracking-[0.3em] text-[#FFE100]/80">
-            What we do
-          </span>
           <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-white sm:text-4xl lg:text-5xl">
-            From uncertainty to something real.
+            What we do
           </h2>
         </div>
 

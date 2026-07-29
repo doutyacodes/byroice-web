@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function Founder() {
   return (
@@ -13,8 +14,11 @@ export default function Founder() {
             viewport={{ once: true, margin: "-10%" }}
             transition={{ duration: 0.6, ease: "easeOut" }}
           >
-            <h2 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
+            <span className="text-xs font-semibold uppercase tracking-[0.3em] text-[#FFE100]/80">
               Founder
+            </span>
+            <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
+              Kiran Roice
             </h2>
           </motion.div>
 
@@ -26,7 +30,7 @@ export default function Founder() {
               transition={{ duration: 0.6, ease: "easeOut" }}
               className="text-lg leading-relaxed text-white/70"
             >
-              ByRoice was founded by Shabeer, driven by the belief that the most valuable ideas require strategy, design, technology and capital to be developed together rather than in isolation.
+              Kiran Roice is an author, researcher and entrepreneur specialising in the creation of conceptual frameworks, analytical indices, products and ventures that make complex cultural, social, behavioural and institutional systems more understandable and usable.
             </motion.p>
             
             <motion.p
@@ -34,9 +38,19 @@ export default function Founder() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-10%" }}
               transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
+              className="text-lg leading-relaxed text-white/70"
+            >
+              He is the creator of the Cultural Distance Spectrum and the author of The Language Hierarchy, Kiss the Damn Frog and Between Missions.
+            </motion.p>
+            
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-10%" }}
+              transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
               className="text-lg leading-relaxed text-[#FFE100]/90 font-medium"
             >
-              Shabeer leads the venture architecture and strategic direction across the ByRoice ecosystem.
+              Through ByRoice, he brings together eighteen years of cross-industry concept development, research, design and business creation under one venture architecture ecosystem.
             </motion.p>
           </div>
         </div>

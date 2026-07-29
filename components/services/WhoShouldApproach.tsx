@@ -31,11 +31,16 @@ export default function WhoShouldApproach() {
     <section className="px-6 py-24 sm:px-10 sm:py-28 lg:px-24 lg:py-32 bg-white/[0.01]">
       <div className="mx-auto max-w-[1600px]">
         <div className="grid grid-cols-1 gap-16 lg:grid-cols-2 lg:gap-24">
-          <div>
-            <h2 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl mb-10">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-10%" }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+          >
+            <h2 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl lg:text-5xl mb-10">
               Who should approach ByRoice?
             </h2>
-            <ul className="space-y-5">
+            <ul className="space-y-6">
               {WHO.map((item, i) => (
                 <motion.li
                   key={i}
@@ -43,54 +48,61 @@ export default function WhoShouldApproach() {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.4, delay: i * 0.05 }}
-                  className="flex text-lg text-white/80"
+                  className="flex items-start text-lg text-white/80"
                 >
-                  <span className="mr-4 mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#FFE100]" />
+                  <span className="mr-5 mt-2 h-2 w-2 shrink-0 rounded-full bg-[#FFE100]" />
                   <span className="leading-relaxed">{item}</span>
                 </motion.li>
               ))}
             </ul>
-          </div>
+          </motion.div>
 
-          <div>
-            <h2 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl mb-10">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-10%" }}
+            transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+          >
+            <h2 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl lg:text-5xl mb-10">
               What you can bring
             </h2>
-            <p className="text-lg text-[#FFE100]/90 mb-8 font-medium">
-              An idea is welcome, but it is not compulsory. A ByRoice engagement can begin with:
-            </p>
-            <ul className="space-y-5">
-              {WHAT.map((item, i) => (
-                <motion.li
-                  key={i}
-                  initial={{ opacity: 0, x: -10 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.4, delay: i * 0.05 }}
-                  className="flex text-lg text-white/80"
-                >
-                  <span className="mr-4 mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-white/30" />
-                  <span className="leading-relaxed">{item}</span>
-                </motion.li>
-              ))}
-            </ul>
+            <div className="rounded-3xl border border-white/10 bg-white/[0.03] p-8 sm:p-10 shadow-lg shadow-black/40 backdrop-blur-sm">
+              <p className="text-lg text-[#FFE100]/90 mb-8 font-medium">
+                An idea is welcome, but it is not compulsory. A ByRoice engagement can begin with:
+              </p>
+              <ul className="space-y-6">
+                {WHAT.map((item, i) => (
+                  <motion.li
+                    key={i}
+                    initial={{ opacity: 0, x: -10 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.4, delay: i * 0.05 }}
+                    className="flex items-start text-[17px] text-white/70"
+                  >
+                    <span className="mr-5 mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-white/40" />
+                    <span className="leading-relaxed">{item}</span>
+                  </motion.li>
+                ))}
+              </ul>
+            </div>
             
-            <div className="mt-16 flex flex-wrap gap-4">
+            <div className="mt-12 flex flex-col sm:flex-row gap-4">
               <Link
                 href="#cta"
-                className="inline-flex items-center gap-2 rounded-full bg-[#FFE100] px-8 py-4 text-base font-semibold text-black shadow-lg shadow-[#FFE100]/10 transition-shadow hover:shadow-xl hover:shadow-[#FFE100]/20"
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-[#FFE100] px-8 py-4 text-base font-semibold text-black shadow-lg shadow-[#FFE100]/10 transition-shadow hover:shadow-xl hover:shadow-[#FFE100]/20 w-full sm:w-auto"
               >
                 Tell Us What You Have
               </Link>
               <Link
                 href="#how-we-work"
-                className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-8 py-4 text-base font-semibold text-white transition-colors hover:bg-white/10 hover:border-white/30"
+                className="inline-flex items-center justify-center gap-2 rounded-full border border-white/20 bg-white/5 px-8 py-4 text-base font-semibold text-white transition-colors hover:bg-white/10 hover:border-white/30 w-full sm:w-auto"
               >
                 Let Us Find What It Could Become
                 <ArrowRightIcon className="h-4 w-4" />
               </Link>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

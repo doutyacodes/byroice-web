@@ -56,16 +56,16 @@ export default function WhoBelongsHere() {
               </p>
             </div>
             
-            <div className="mt-12 flex flex-wrap gap-4">
+            <div className="mt-12 flex flex-col sm:flex-row gap-4">
               <Link
                 href="mailto:careers@byroice.com"
-                className="inline-flex items-center gap-2 rounded-full bg-[#FFE100] px-8 py-4 text-base font-semibold text-black shadow-lg shadow-[#FFE100]/10 transition-shadow hover:shadow-xl hover:shadow-[#FFE100]/20"
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-[#FFE100] px-8 py-4 text-base font-semibold text-black shadow-lg shadow-[#FFE100]/10 transition-shadow hover:shadow-xl hover:shadow-[#FFE100]/20 w-full sm:w-auto"
               >
                 Introduce Yourself
               </Link>
               <Link
                 href="mailto:ventures@byroice.com"
-                className="inline-flex items-center gap-2 rounded-full border border-[#FFE100]/30 bg-transparent px-8 py-4 text-base font-semibold text-white transition-colors hover:bg-[#FFE100]/5 hover:border-[#FFE100]/50"
+                className="inline-flex items-center justify-center gap-2 rounded-full border border-white/20 bg-white/5 px-8 py-4 text-base font-semibold text-white transition-colors hover:bg-white/10 hover:border-white/30 w-full sm:w-auto"
               >
                 Tell Us What You Want to Build
                 <ArrowRightIcon className="h-4 w-4" />
