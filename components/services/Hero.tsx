@@ -20,29 +20,35 @@ export default function ServicesHero() {
           <div className="flex items-center gap-4">
             <span className="h-px w-8 bg-[#FFE100]/50" />
             <span className="text-xs font-semibold uppercase tracking-[0.3em] text-[#FFE100]/80">
-              Our Approach
+              Services
             </span>
             <span className="h-px w-8 bg-[#FFE100]/50" />
           </div>
 
           <h1 className="mt-8 max-w-4xl text-4xl font-extrabold leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-[64px]">
-            We Build Businesses,
-            <br />
-            <span className="text-[#FFE100]">Not Just Products.</span>
+            We build the part before the obvious.
           </h1>
 
-          <p className="mt-7 max-w-2xl text-lg leading-relaxed text-white/75 sm:text-xl">
-            Every business we take on starts from a different place — a blank page, a stalled brand, or a legacy worth carrying
-            forward. We meet you where you are, and bring the strategy, design, engineering and momentum to take it further,
-            in any industry.
+          <p className="mt-7 max-w-2xl text-lg leading-relaxed text-[#FFE100]/90 sm:text-xl font-medium">
+            Strategy, research, R&D, design, prototyping and venture development—brought together for 0→1 creation.
           </p>
 
-          <motion.div whileHover={{ y: -3 }} whileTap={{ scale: 0.98 }} className="mt-10">
+          <p className="mt-5 max-w-3xl text-base leading-relaxed text-white/70 sm:text-lg">
+            ByRoice is not a conventional consultancy that ends with recommendations. We work across disciplines to discover what should be built, determine how it can work and develop it far enough to be tested, launched, handed over or grown.
+          </p>
+
+          <motion.div whileHover={{ y: -3 }} whileTap={{ scale: 0.98 }} className="mt-10 flex flex-wrap items-center justify-center gap-4">
             <Link
               href="#cta"
               className="inline-flex items-center gap-2 rounded-full bg-[#FFE100] px-8 py-4 text-base font-semibold text-black shadow-lg shadow-[#FFE100]/10 transition-shadow hover:shadow-xl hover:shadow-[#FFE100]/20"
             >
-              Start Your Journey
+              Discuss a Project
+            </Link>
+            <Link
+              href="#how-we-work"
+              className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-8 py-4 text-base font-semibold text-white transition-colors hover:bg-white/10 hover:border-white/30"
+            >
+              See How We Work
               <ArrowRightIcon className="h-4 w-4" />
             </Link>
           </motion.div>

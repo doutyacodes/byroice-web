@@ -4,16 +4,15 @@ import Footer from "@/components/Footer";
 import PremiumBackground from "@/components/PremiumBackground";
 import ServicesHero from "@/components/services/Hero";
 import OurServices from "@/components/services/OurServices";
-import JourneyRoadmap from "@/components/services/JourneyRoadmap";
-import ReviveInPractice from "@/components/services/ReviveInPractice";
 import ExpertiseGrid from "@/components/services/ExpertiseGrid";
-import WhyByRoice from "@/components/services/WhyByRoice";
+import WaysToWork from "@/components/services/WaysToWork";
+import WhoShouldApproach from "@/components/services/WhoShouldApproach";
 import ServicesCTA from "@/components/services/CTA";
 
 export const metadata: Metadata = {
   title: "Services — ByRoice",
   description:
-    "We build businesses, not just products. Strategy, design, technology and execution — from idea to company.",
+    "We build the part before the obvious. Strategy, research, R&D, design, prototyping and venture development.",
 };
 
 export default function ServicesPage() {
@@ -25,10 +24,9 @@ export default function ServicesPage() {
       <main className="relative z-10">
         <ServicesHero />
         <OurServices />
-        <JourneyRoadmap />
-        <ReviveInPractice />
         <ExpertiseGrid />
-        <WhyByRoice />
+        <WaysToWork />
+        <WhoShouldApproach />
         <ServicesCTA />
       </main>
 

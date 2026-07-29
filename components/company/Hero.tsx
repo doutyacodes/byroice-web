@@ -80,38 +80,43 @@ export default function CompanyHero() {
           <div className="flex items-center gap-4">
             <span className="h-px w-8 bg-[#FFE100]/50" />
             <span className="text-xs font-semibold uppercase tracking-[0.3em] text-[#FFE100]/80">
-              About ByRoice
+              Company
             </span>
           </div>
 
           <h1 className="mt-8 max-w-xl text-4xl font-extrabold leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-[56px]">
-            Building the Businesses of Tomorrow
+            The company behind the companies.
           </h1>
 
-          <p className="mt-7 max-w-lg text-lg leading-relaxed text-white/70 sm:text-xl">
-            ByRoice is a business creation ecosystem — we partner with
-            visionaries to conceptualize, design, build and scale companies
-            that shape industries. From the first idea to global growth, we
-            operate as founders, not vendors.
+          <p className="mt-7 max-w-lg text-lg leading-relaxed text-[#FFE100]/90 sm:text-xl font-medium">
+            ByRoice creates new ventures, transforms existing ones and brings valuable ideas and enterprises back to life.
+          </p>
+
+          <p className="mt-4 max-w-xl text-base leading-relaxed text-white/70 sm:text-lg">
+            We are a venture architecture and 0→1 development company working across strategy, research, R&D, design, prototyping and business creation.
+          </p>
+          
+          <p className="mt-4 max-w-xl text-base leading-relaxed text-white/70 sm:text-lg">
+            Our work may result in a product, service, platform, system, programme, brand or complete company. The form changes. The role remains the same: discover what should exist and build the first credible version of it.
           </p>
 
           <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row">
             <motion.div whileHover={{ y: -3 }} whileTap={{ scale: 0.98 }}>
               <Link
-                href="/business"
+                href="/services"
                 className="inline-flex items-center gap-2 rounded-full bg-[#FFE100] px-8 py-4 text-base font-semibold text-black shadow-lg shadow-[#FFE100]/10 transition-shadow hover:shadow-xl hover:shadow-[#FFE100]/20"
               >
-                Explore Our Companies
-                <ArrowRightIcon className="h-4 w-4" />
+                Work With ByRoice
               </Link>
             </motion.div>
 
             <motion.div whileHover={{ y: -3 }} whileTap={{ scale: 0.98 }}>
               <Link
-                href="#cta"
+                href="/business"
                 className="inline-flex items-center gap-2 rounded-full border border-white/20 px-8 py-4 text-base font-medium text-white/85 transition-colors hover:border-white/40 hover:text-white"
               >
-                Partner With Us
+                Explore Our Businesses
+                <ArrowRightIcon className="h-4 w-4" />
               </Link>
             </motion.div>
           </div>

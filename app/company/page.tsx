@@ -4,20 +4,15 @@ import Footer from "@/components/Footer";
 import PremiumBackground from "@/components/PremiumBackground";
 import CompanyHero from "@/components/company/Hero";
 import WhoWeAre from "@/components/company/WhoWeAre";
-import Stats from "@/components/company/Stats";
 import WhatWeDo from "@/components/company/WhatWeDo";
-import Expertise from "@/components/company/Expertise";
+import Organization from "@/components/company/Organization";
 import Philosophy from "@/components/company/Philosophy";
-import Journey from "@/components/company/Journey";
-import Recognition from "@/components/company/Recognition";
-import Values from "@/components/company/Values";
-import GlobalPresence from "@/components/company/GlobalPresence";
-import CompanyCTA from "@/components/company/CTA";
+import Founder from "@/components/company/Founder";
 
 export const metadata: Metadata = {
   title: "Company — ByRoice",
   description:
-    "ByRoice is a business creation ecosystem — we partner with visionaries to conceptualize, design, build and scale companies that shape industries.",
+    "The company behind the companies. We are a venture architecture and 0→1 development company.",
 };
 
 export default function CompanyPage() {
@@ -29,15 +24,10 @@ export default function CompanyPage() {
       <main className="relative z-10">
         <CompanyHero />
         <WhoWeAre />
-        <Stats />
         <WhatWeDo />
-        <Expertise />
+        <Organization />
         <Philosophy />
-        <Journey />
-        <Recognition />
-        <Values />
-        <GlobalPresence />
-        <CompanyCTA />
+        <Founder />
       </main>
 
       <Footer />

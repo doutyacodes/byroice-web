@@ -1,79 +1,57 @@
 "use client";
 
 import { motion } from "framer-motion";
-import type { ComponentType, SVGProps } from "react";
-import { TargetIcon, AtomIcon } from "../services/icons";
-import { EyeIcon, QuoteIcon } from "./icons";
+import { CheckCircleIcon } from "lucide-react";
 
-interface Pillar {
-  title: string;
-  description: string;
-  icon: ComponentType<SVGProps<SVGSVGElement>>;
-}
-
-const PILLARS: Pillar[] = [
-  {
-    title: "Vision",
-    description:
-      "Seeing the business a good idea can become, long before the market does.",
-    icon: EyeIcon,
-  },
-  {
-    title: "Innovation",
-    description:
-      "Challenging convention with technology and design that move first.",
-    icon: AtomIcon,
-  },
-  {
-    title: "Execution",
-    description:
-      "Turning ambition into shipped products, real revenue and lasting companies.",
-    icon: TargetIcon,
-  },
+const PHILOSOPHIES = [
+  "The client does not need to arrive with an idea.",
+  "Research should reduce uncertainty before scale multiplies it.",
+  "A prototype can answer questions that a presentation cannot.",
+  "Newness is useful only when it creates real value.",
+  "The product, experience, brand, business model and operating system must be designed as one whole.",
+  "ByRoice should remain strongest where ambiguity is greatest: the journey from zero to one.",
+  "When a venture needs a 1→100 operator, the right leader should take it forward."
 ];
 
 export default function Philosophy() {
   return (
     <section className="px-6 py-24 sm:px-10 sm:py-28 lg:px-24 lg:py-32">
-      <div className="mx-auto max-w-4xl text-center">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-10%" }}
-          transition={{ duration: 0.7, ease: "easeOut" }}
-        >
-          <QuoteIcon className="mx-auto h-9 w-9 text-[#FFE100]/60" />
-          <p className="mt-6 text-2xl font-semibold leading-snug tracking-tight text-white sm:text-3xl lg:text-4xl">
-            &ldquo;We don&apos;t simply build products. We create businesses
-            that shape industries.&rdquo;
-          </p>
-        </motion.div>
+      <div className="mx-auto max-w-[1600px]">
+        <div className="grid grid-cols-1 gap-16 lg:grid-cols-2 lg:gap-24">
+          <div>
+            <h2 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl mb-10">
+              Our operating philosophy
+            </h2>
+            <ul className="space-y-6">
+              {PHILOSOPHIES.map((item, i) => (
+                <motion.li
+                  key={i}
+                  initial={{ opacity: 0, x: -10 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.4, delay: i * 0.05 }}
+                  className="flex items-start text-lg text-white/80"
+                >
+                  <CheckCircleIcon className="mr-4 mt-0.5 h-6 w-6 shrink-0 text-[#FFE100]" />
+                  <span className="leading-relaxed">{item}</span>
+                </motion.li>
+              ))}
+            </ul>
+          </div>
 
-        <div className="mt-16 grid grid-cols-1 gap-6 sm:grid-cols-3 sm:gap-8">
-          {PILLARS.map((pillar, index) => {
-            const Icon = pillar.icon;
-            return (
-              <motion.div
-                key={pillar.title}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-10%" }}
-                whileHover={{ y: -6 }}
-                transition={{ duration: 0.5, ease: "easeOut", delay: index * 0.1 }}
-                className="rounded-3xl border border-white/10 bg-white/[0.03] p-7 backdrop-blur-sm transition-colors duration-300 hover:border-[#FFE100]/35"
-              >
-                <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-xl border border-[#FFE100]/25 bg-[#FFE100]/5 text-[#FFE100]">
-                  <Icon className="h-6 w-6" />
-                </div>
-                <h3 className="mt-4 text-lg font-semibold text-white">
-                  {pillar.title}
-                </h3>
-                <p className="mt-2 text-sm leading-relaxed text-white/55">
-                  {pillar.description}
-                </p>
-              </motion.div>
-            );
-          })}
+          <div>
+            <h2 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl mb-10">
+              Across industries, not confined by them
+            </h2>
+            <div className="space-y-6 text-lg text-white/70 leading-relaxed">
+              <p>
+                ByRoice works across digital platforms, enterprise systems, consumer products, industrial design, mobility, horology, media, education, civic systems, institutional intelligence, experiences, sport and advanced engineering.
+              </p>
+              <p>
+                This range is not a claim to know every industry in advance. It reflects a method: learn the system deeply, find the hidden opportunity, assemble the necessary expertise and create the first working answer.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
