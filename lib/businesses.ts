@@ -144,10 +144,11 @@ export const BUSINESSES: Business[] = [
     description: "An AI-powered judgment platform where the full facts and conditions of a dispute are reviewed to deliver a structured ruling, with up to ten rounds of appeal as new facts emerge. Designed for use at police stations during FIR filing, Judge offers a faster, more accessible first layer of resolution.",
   },
   {
-    id: "keekkoos",
-    name: "Keekkoos",
+    id: "keekkoo",
+    name: "Keekkoo",
     category: "Media",
-    description: "A media platform built for kids aged three to twelve, offering chat- and image-based stories, age-appropriate daily news, and contests. Keekkoos is designed to give young audiences safe, engaging content made just for them.",
+    description: "A media platform built for kids aged three to twelve, offering chat- and image-based stories, age-appropriate daily news, and contests. Keekkoo is designed to give young audiences safe, engaging content made just for them.",
+    logo: "/assets/logos/keekkoo.png",
   },
   {
     id: "knockster",
@@ -228,6 +229,13 @@ export const BUSINESSES: Business[] = [
     category: "Media",
     description: "A mobile storytelling app told entirely through text and chat-style conversations, with a browsing experience inspired by Netflix. PingTales lets people read stories in an entirely new format, and create their own as well.",
     logo: "/assets/logos/pingtales.png",
+  },
+  {
+    id: "qatha",
+    name: "Qatha",
+    category: "Media",
+    description: "An interactive storytelling platform where stories go beyond text, combining chats, images, audio, video, games, quizzes, and real-world challenges. Qatha gives both creators and audiences a new way to experience stories — not just by reading them, but by interacting with them and sometimes stepping into them.",
+    logo: "/assets/logos/qatha.png",
   },
   {
     id: "qoupled",
@@ -344,5 +352,6 @@ export const BUSINESSES: Business[] = [
     name: "Zuppdate",
     category: "Technology",
     description: "A live update and interaction platform for bookings, events, and services — from the moment of booking, through the event itself, to what happens after. Whether it's a hospital token or a queue at any service, Zuppdate lets people take a token, track it live, see their expected time, and stay updated on any changes along the way.",
+    logo: "/assets/logos/zuppdate.png",
   },
 ];
