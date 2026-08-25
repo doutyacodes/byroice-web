@@ -65,5 +65,21 @@ export const BUSINESSES: Business[] = [
     description: "",
     logo: "/assets/logos/zuppdate.png",
     url: "https://www.zuppdate.com/",
+  },
+  {
+    id: "roice-strategies",
+    name: "Roice Strategies",
+    category: "Business",
+    description: "",
+    logo: "/assets/logos/roicestrategies.png",
+    url: "https://www.roicestrategies.com",
+  },
+  {
+    id: "zamachar",
+    name: "Zamachar",
+    category: "Media",
+    description: "",
+    logo: "/assets/logos/zamachar.png",
+    url: "https://www.zamachar.com",
   }
 ];
