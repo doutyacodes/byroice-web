@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import QuickChat from "./QuickChat";
 
 export default function Hero() {
   return (
@@ -38,7 +37,7 @@ export default function Hero() {
           </div>
 
           <h1 className="mt-8 max-w-4xl text-4xl font-extrabold leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-[64px]">
-            In the beginning, there is Us.
+            CREATE. TRANSFORM. REVIVE
           </h1>
 
           <p className="mt-6 max-w-2xl text-xl leading-relaxed text-[#FFE100]/90 sm:text-2xl font-medium">
@@ -50,9 +49,6 @@ export default function Hero() {
           </p>
           </motion.div>
 
-          <div className="mt-16 flex justify-center w-full lg:mt-0 lg:w-auto lg:absolute lg:bottom-10 lg:right-10 z-50">
-            <QuickChat />
-          </div>
         </div>
       </div>
     </section>

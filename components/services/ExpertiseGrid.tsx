@@ -20,29 +20,18 @@ interface Pillar {
 
 const PILLARS: Pillar[] = [
   {
-    title: "Opportunity discovery",
-    description: "We study the assets, constraints, capabilities and ambitions already present—and identify what they could become.",
+    title: "Opportunity Discovery",
+    description: "We study the problems, assets, constraints, capabilities and ambitions already present—and identify what they could become.",
     bullets: [
       "Opportunity mapping and problem discovery",
       "Asset, capability and intellectual-property exploration",
-      "New venture, product and service concepts",
-      "Category creation and future-direction exercises"
+      "New business, product and service concepts",
+      "Category creation and future-direction development"
     ],
     icon: Lightbulb,
   },
   {
-    title: "Strategy and venture architecture",
-    description: "We define how the idea creates value, for whom it exists and how the pieces fit together.",
-    bullets: [
-      "Business models and commercial architecture",
-      "Product, service and platform strategy",
-      "Positioning, differentiation and market-entry direction",
-      "Venture structure, roadmap and ecosystem design"
-    ],
-    icon: Map,
-  },
-  {
-    title: "Research and validation",
+    title: "Research and Validation",
     description: "We replace attractive assumptions with evidence before expensive commitments are made.",
     bullets: [
       "Market, user, competitor and cultural research",
@@ -51,6 +40,17 @@ const PILLARS: Pillar[] = [
       "Pilot design, testing and validation"
     ],
     icon: SearchCheck,
+  },
+  {
+    title: "Strategy and Venture Architecture",
+    description: "We determine how the idea creates value, whom it serves and how its commercial and operational components fit together.",
+    bullets: [
+      "Business models and commercial architecture",
+      "Product, service and platform strategy",
+      "Positioning, differentiation and market-entry direction",
+      "Venture structure, roadmap and ecosystem design"
+    ],
+    icon: Map,
   },
   {
     title: "Design",
@@ -64,8 +64,8 @@ const PILLARS: Pillar[] = [
     icon: PenTool,
   },
   {
-    title: "R&D and prototyping",
-    description: "We experiment, engineer and build to answer the questions that cannot be solved in a presentation.",
+    title: "R&D and Prototyping",
+    description: "We experiment, engineer and build to answer questions that cannot be resolved through recommendations or presentations alone.",
     bullets: [
       "Proofs of concept and experimental builds",
       "Physical, digital and hybrid prototypes",
@@ -75,13 +75,13 @@ const PILLARS: Pillar[] = [
     icon: FlaskConical,
   },
   {
-    title: "Venture development",
-    description: "Where the brief extends beyond the product, we build the foundations of the enterprise around it.",
+    title: "Venture Development",
+    description: "Where the assignment extends beyond the product, we develop the foundations of the business around it.",
     bullets: [
       "Venture identity and operating foundations",
       "Initial team and partner architecture",
-      "Launch-readiness and handover",
-      "Spin-out, partnership or continued build pathways"
+      "Launch preparation and early execution",
+      "Handover, partnership, spin-out or continued development"
     ],
     icon: Building2,
   },

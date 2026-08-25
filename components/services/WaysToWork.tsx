@@ -4,20 +4,20 @@ import { motion } from "framer-motion";
 
 const WAYS = [
   {
-    title: "A defined 0→1 project",
-    description: "A focused assignment with a clear outcome: a strategy, concept, prototype, MVP, pilot, redesigned product or new venture foundation.",
+    title: "A Defined Project",
+    description: "A focused assignment with a clear outcome: research, strategy, a concept, prototype, MVP, pilot, redesigned product or foundation for a new business.",
   },
   {
-    title: "An embedded innovation unit",
-    description: "ByRoice operates alongside your leadership as an external R&D department or skunkworks for a sustained period.",
+    title: "An Embedded Creation Unit",
+    description: "ByRoice works alongside your leadership as an external innovation, R&D and business-building team for a sustained period.",
   },
   {
-    title: "A venture partnership",
+    title: "A Venture Partnership",
     description: "We co-create a new business with an entrepreneur, company, family office, institution or strategic partner.",
   },
   {
-    title: "A revival mandate",
-    description: "We investigate, reposition and rebuild a dormant business, legacy brand, product or body of intellectual property.",
+    title: "A Revival Mandate",
+    description: "We investigate, reposition and rebuild a dormant business, heritage brand, discontinued product or body of intellectual property.",
   }
 ];
 

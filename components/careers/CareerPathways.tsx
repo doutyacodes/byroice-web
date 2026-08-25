@@ -54,7 +54,7 @@ const PATHWAYS = [
       "Country, market or category lead"
     ],
     cta: "Lead a ByRoice Business",
-    ctaLink: "#",
+    ctaLink: "/careers/lead",
     footer: "Leadership structures may include salary, performance incentives and meaningful equity, depending on the venture, stage, commitment and capital requirements."
   }
 ];

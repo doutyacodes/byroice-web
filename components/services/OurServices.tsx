@@ -12,21 +12,21 @@ interface Track {
 
 const TRACKS: Track[] = [
   {
-    title: "Create something new",
+    title: "Create something that does not yet exist.",
     description:
-      "Develop a new company, product, service, platform, technology, system, brand, programme or initiative from the ground up.",
+      "Develop a new business, product, service, platform, technology, system, brand, programme or initiative from the ground up.\n\nYou do not need to arrive with a fully formed idea. We can begin with a problem, opportunity, capability, technology, asset or ambition—and determine what should be built.",
     icon: LightbulbIcon,
   },
   {
-    title: "Find the next direction",
+    title: "Find what an existing business can become next.",
     description:
-      "Help an existing business escape stagnation through a pivot, new offering, new market, new model, new identity or redesigned customer experience.",
+      "Help an organisation move beyond stagnation through a new product, market, business model, identity, operating direction or redesigned customer experience.\n\nTransformation can involve one part of a business or a fundamental rethinking of the business itself.",
     icon: TransformIcon,
   },
   {
-    title: "Bring something valuable back",
+    title: "Bring something valuable back.",
     description:
-      "Rebuild a dormant company, heritage brand, discontinued product, neglected asset, abandoned technology or forgotten intellectual property for contemporary relevance.",
+      "Investigate, reposition and rebuild a dormant company, heritage brand, discontinued product, neglected asset, abandoned technology or body of intellectual property.\n\nRevival is not merely cosmetic rebranding. We identify what remains valuable and build a commercially and culturally relevant future around it.",
     icon: PhoenixIcon,
   },
 ];
@@ -54,7 +54,7 @@ function TrackCard({ track, index }: { track: Track; index: number }) {
       </div>
 
       <div className="mt-5 flex-1">
-        <p className="leading-relaxed text-white/60 text-[15px]">
+        <p className="leading-relaxed text-white/60 text-[15px] whitespace-pre-line">
           {track.description}
         </p>
       </div>
@@ -69,15 +69,18 @@ export default function OurServices() {
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-8">
           <div className="lg:col-span-5">
             <span className="text-xs font-semibold uppercase tracking-[0.3em] text-[#FFE100]/80">
-              Your independent 0→1 department
+              YOUR EXTERNAL CREATION ENGINE
             </span>
             <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
-              For organisations without an internal innovation team—or those that need a faster, more independent unit—ByRoice can operate as a skunkworks on hire.
+              Your skunkworks on hire.
             </h2>
           </div>
           <div className="lg:col-span-6 lg:col-start-7 lg:mt-10">
             <p className="text-lg leading-relaxed text-white/70">
-              We bring together the capabilities normally divided between strategy firms, research teams, design studios, product labs, engineering partners and venture builders. The team changes with the problem. The objective does not: move from uncertainty to a working reality.
+              For organisations without an internal innovation team—and those that need a faster, more independent unit—ByRoice can operate as an external creation, R&D and venture-development team.
+            </p>
+            <p className="mt-4 text-lg leading-relaxed text-white/70">
+              We bring together capabilities normally divided among strategy firms, research teams, design studios, product laboratories, engineering partners and venture builders. The team changes with the mission. The objective remains the same: turn uncertainty into something tangible, testable and capable of moving forward.
             </p>
           </div>
         </div>

@@ -37,7 +37,7 @@ export default function Navbar() {
 
         <nav
           aria-label="Primary"
-          className="hidden flex-1 items-center justify-center gap-8 lg:flex xl:gap-12"
+          className="hidden items-center gap-8 lg:flex xl:gap-12"
         >
           {NAV_LINKS.map((link) => (
             <Link

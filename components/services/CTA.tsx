@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRightIcon } from "./icons";
 
 export default function ServicesCTA() {
   return (
@@ -21,13 +20,13 @@ export default function ServicesCTA() {
             className="relative"
           >
             <span className="text-xs font-semibold uppercase tracking-[0.3em] text-[#FFE100]/80">
-              Let&apos;s Talk
+              From concept to company—for our clients and ourselves.
             </span>
             <h2 className="mx-auto mt-5 max-w-2xl text-3xl font-extrabold leading-[1.15] tracking-tight text-white sm:text-4xl lg:text-5xl">
-              Let&apos;s Build Your Next Business
+              What should we build together?
             </h2>
             <p className="mx-auto mt-5 max-w-2xl text-base text-white/60 sm:text-lg">
-              Bring us where you&apos;re starting from — an idea, a pivot, or a legacy worth reviving. We&apos;ll bring the strategy, design, engineering and momentum to make it real.
+              Tell us where you are starting—from a problem, opportunity or early idea to an existing business ready for transformation or a valuable legacy waiting to return.
             </p>
 
             <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
@@ -37,17 +36,7 @@ export default function ServicesCTA() {
                 whileTap={{ scale: 0.98 }}
                 className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#FFE100] px-8 py-4 text-base font-semibold text-black shadow-lg shadow-[#FFE100]/10 transition-shadow hover:shadow-xl hover:shadow-[#FFE100]/20 sm:w-auto"
               >
-                Start Your Journey
-                <ArrowRightIcon className="h-4 w-4" />
-              </motion.a>
-
-              <motion.a
-                href="#"
-                whileHover={{ y: -3 }}
-                whileTap={{ scale: 0.98 }}
-                className="inline-flex w-full items-center justify-center rounded-full border border-white/20 px-8 py-4 text-base font-medium text-white/85 transition-colors hover:border-white/40 hover:text-white sm:w-auto"
-              >
-                Schedule a Consultation
+                Discuss a Project
               </motion.a>
             </div>
           </motion.div>

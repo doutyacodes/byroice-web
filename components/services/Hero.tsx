@@ -26,15 +26,15 @@ export default function ServicesHero() {
           </div>
 
           <h1 className="mt-8 max-w-4xl text-4xl font-extrabold leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-[64px]">
-            We build the part before the obvious.
+            We build what comes next.
           </h1>
 
           <p className="mt-7 max-w-2xl text-lg leading-relaxed text-[#FFE100]/90 sm:text-xl font-medium">
-            Strategy, research, R&D, design, prototyping and venture development—brought together for 0→1 creation.
+            ByRoice helps organisations and entrepreneurs create something new, transform what already exists and bring valuable businesses, brands and ideas back into relevance.
           </p>
 
           <p className="mt-5 max-w-3xl text-base leading-relaxed text-white/70 sm:text-lg">
-            ByRoice is not a conventional consultancy that ends with recommendations. We work across disciplines to discover what should be built, determine how it can work and develop it far enough to be tested, launched, handed over or grown.
+            We combine research, strategy, design, R&D, prototyping and venture development to move from uncertainty to a working reality.
           </p>
 
           <motion.div whileHover={{ y: -3 }} whileTap={{ scale: 0.98 }} className="mt-10 flex flex-wrap items-center justify-center gap-4">
@@ -48,7 +48,7 @@ export default function ServicesHero() {
               href="#how-we-work"
               className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-8 py-4 text-base font-semibold text-white transition-colors hover:bg-white/10 hover:border-white/30"
             >
-              See How We Work
+              Explore Our Capabilities
               <ArrowRightIcon className="h-4 w-4" />
             </Link>
           </motion.div>
