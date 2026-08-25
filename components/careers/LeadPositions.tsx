@@ -5,7 +5,7 @@ import { createPortal } from "react-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { sendApplication } from "@/app/actions/sendApplication";
 
-type Category = "Founder-in-residence" | "Chief operating officer" | "Technical co-founder" | "Head of Sales";
+type Category = "Founder-In-Residence" | "Chief Operating Officer" | "Technical Co-Founder";
 
 interface JobPost {
   id: string;
@@ -17,58 +17,16 @@ interface JobPost {
 
 const POSTS: JobPost[] = [
   {
-    id: "fir-1",
-    title: "Founder-in-Residence (Probability Markets)",
-    company: "ChanceTrade",
-    description: "Lead the 0→1 build of a skill-based probability exchange. You will own product direction, early team building, and market entry for this new prediction market platform.",
-    category: "Founder-in-residence"
-  },
-  {
-    id: "fir-2",
-    title: "Entrepreneur-in-Residence (Legal Tech)",
-    company: "Judge (Zero Court)",
-    description: "Join ByRoice to take our AI-powered judgment platform to market. We provide the core tech and capital; you provide the vision and execution to revolutionize first-layer dispute resolution.",
-    category: "Founder-in-residence"
-  },
-  {
-    id: "coo-1",
-    title: "Chief Operating Officer",
-    company: "Homedel",
-    description: "Scale operations and logistics for our dedicated hospitality delivery platform. Oversee fleet management, restaurant partnerships, and day-to-day business mechanics as we enter our next growth phase.",
-    category: "Chief operating officer"
-  },
-  {
     id: "coo-2",
     title: "COO / Head of Growth",
     company: "Gigstar",
     description: "Drive commercial expansion and operational efficiency for a rapidly scaling gig marketplace. Must have experience scaling two-sided marketplaces, managing P&L, and driving user acquisition.",
-    category: "Chief operating officer"
-  },
-  {
-    id: "tech-1",
-    title: "Technical Co-Founder",
-    company: "Lawyer (FriendInLaw)",
-    description: "Lead the technical architecture and engineering team for our AI legal companion. Seeking an experienced builder capable of navigating complex AI integrations and scaling a product from MVP to enterprise readiness.",
-    category: "Technical co-founder"
-  },
-  {
-    id: "tech-2",
-    title: "CTO / Technical Lead",
-    company: "NewsTech",
-    description: "Build the foundational infrastructure for our AI-powered newsroom technology. You will own the tech stack, recruit the engineering team, and define our engineering culture for modern media tools.",
-    category: "Technical co-founder"
-  },
-  {
-    id: "sales-1",
-    title: "Head of Sales",
-    company: "Xortcut",
-    description: "Drive institutional and B2B growth for our career guidance platform. You will build the sales pipeline from the ground up, partner with educational organizations, and lead our revenue strategy.",
-    category: "Head of Sales"
+    category: "Chief Operating Officer"
   }
 ];
 
 export default function LeadPositions() {
-  const [activeTab, setActiveTab] = useState<Category>("Founder-in-residence");
+  const [activeTab, setActiveTab] = useState<Category>("Founder-In-Residence");
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedJob, setSelectedJob] = useState<JobPost | null>(null);
   const [mounted, setMounted] = useState(false);
@@ -132,10 +90,9 @@ export default function LeadPositions() {
   };
 
   const tabs: Category[] = [
-    "Founder-in-residence",
-    "Chief operating officer",
-    "Technical co-founder",
-    "Head of Sales"
+    "Founder-In-Residence",
+    "Chief Operating Officer",
+    "Technical Co-Founder"
   ];
 
   return (
@@ -177,10 +134,7 @@ export default function LeadPositions() {
                 className="flex flex-col overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] p-8 shadow-lg shadow-black/40 backdrop-blur-sm transition-[border-color,box-shadow,transform] duration-300 hover:border-[#FFE100]/30 hover:shadow-2xl hover:shadow-[#FFE100]/5 hover:-translate-y-1"
               >
                 <div className="flex-1">
-                  <h3 className="text-2xl font-bold text-white mb-3">{post.title}</h3>
-                  <div className="text-sm font-semibold uppercase tracking-widest text-[#FFE100]/90 mb-6">
-                    {post.company}
-                  </div>
+                  <h3 className="text-2xl font-bold text-white mb-6">{post.title}</h3>
                   <p className="text-white/70 leading-relaxed text-[15px]">
                     {post.description}
                   </p>
@@ -233,7 +187,6 @@ export default function LeadPositions() {
                 </button>
                 
                 <h2 className="text-2xl font-bold text-white pr-6">Apply for {selectedJob.title}</h2>
-                <p className="text-[#FFE100] mt-2 text-sm uppercase tracking-wider font-semibold">{selectedJob.company}</p>
                 
                 <form onSubmit={handleSubmit} className="mt-8 space-y-5">
                   <div>
