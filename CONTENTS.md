@@ -158,9 +158,9 @@ guests involved.
 48. Xertify An AI-powered self-testing and certification platform where anyone can test 
 themselves on virtually any topic, no matter how niche. Xertify makes it possible to 
 prove knowledge and curiosity on your own terms. 
-49. Xortcut A career guidance and hand-holding app that identifies the exact sectors, 
+49. Xortlist A career guidance and hand-holding app that identifies the exact sectors, 
 clusters, and careers best suited to a person's personality and interests, starting from 
-class five all the way through adulthood. Xortcut is built to take the guesswork out of 
+class five all the way through adulthood. Xortlist is built to take the guesswork out of 
 choosing a path. 
 50. Xortlist A career pipeline app where people follow their dream job through a 
 structured, multi-year journey of challenges, levels, and rewards — from goodies and 

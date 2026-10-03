@@ -51,12 +51,12 @@ export const BUSINESSES: Business[] = [
     url: "https://www.qatha.com/",
   },
   {
-    id: "xortcut",
-    name: "Xortcut",
+    id: "xortlist",
+    name: "Xortlist",
     category: "Technology",
     description: "",
-    logo: "/assets/logos/xortcut.png",
-    url: "https://www.xortcut.com/",
+    logo: "/assets/logos/xortlist.png",
+    url: "https://www.xortlist.com/",
   },
   {
     id: "zuppdate",
